@@ -47,6 +47,8 @@
 		"zod-validation-error": "^3.4.0"
 	},
 	"dependencies": {
+		"@fontsource-variable/roboto": "^5.2.5",
+		"@fontsource-variable/roboto-mono": "^5.2.5",
 		"@zachleat/heading-anchors": "^1.0.3"
 	}
 }

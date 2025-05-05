@@ -1,11 +1,9 @@
 export default {
-	title: "Eleventy Base Blog v9",
-	url: "https://example.com/",
+	title: "Journal Worthy Journey",
+	url: "https://journalworthyjourney.com",
 	language: "en",
-	description: "I am writing about my experiences as a naval navel-gazer.",
+	description: "Full Time RV couple sharing our travels living in our Keystone Montana 3813ms 5th wheel.",
 	author: {
-		name: "Your Name Here",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+		name: "Brent and Tayler Spotswood"
 	}
 }

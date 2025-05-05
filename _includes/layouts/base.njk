@@ -8,7 +8,7 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
-		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+		<meta name="generator" content="{{ eleventy.generator }}">
 
 		{#-
 		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
@@ -40,7 +40,12 @@
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
+			<div class="home-link-wrapper">
+			  <a class="home-link" href="/">
+				  <img src="/img/blog-logo.png"  alt="Journal Worthy Journey" eleventy:ignore>
+				  <span class="home-link-title">{{ metadata.title }}</span>
+			  </a>
+			</div>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>

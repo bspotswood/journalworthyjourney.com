@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Episode 1: A Journey Begins, Heading West</title>
+		<meta name="description" content="Full Time RV couple sharing our travels living in our Keystone Montana 3813ms 5th wheel.">
+		<link rel="alternate" href="/journalworthyjourney.com/feed/feed.xml" type="application/atom+xml" title="Journal Worthy Journey">
+		<meta name="generator" content="Eleventy v3.1.0">
+		
+		
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+@import url("/fonts/roboto/index.css");
+@import url("/fonts/roboto-mono/index.css");
+
+/* Defaults */
+:root {
+	--font-family: "Roboto Variable", -apple-system, system-ui, sans-serif;
+	--font-family-monospace: "Roboto Mono Variable", Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	font-size: 16px;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: #000;
+	--text-color-link: #082840;
+	--text-color-link-active: #2e7ff7;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8; */
+
+		/* --text-color is assigned to --color-gray-_ above */
+		/* --text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+} */
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+main {
+	max-width: 55rem;
+	justify-self: center;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+	padding: 16px 5%;    
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	background: #fff;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 5%;
+	box-sizing: inherit;
+	flex-direction: row;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.home-link-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+.home-link {
+	flex-grow: 1;
+	flex-basis: clamp(.5rem, 20vw, 1.5rem);
+	font-weight: 400;
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	align-items: center;
+	font-size: 24px;
+	text-decoration: none;
+}
+.home-link>img {
+	width: 64px;
+	height: 48px;
+}
+.home-link-title {
+	padding-left: 15px;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	counter-reset: start-from var(--postlist-index);
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+heading-anchors h1{
+	font-size: 3.4rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}</style>
+		
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<div class="home-link-wrapper">
+			  <a class="home-link" href="/journalworthyjourney.com/">
+				  <img src="/journalworthyjourney.com/img/blog-logo.png" alt="Journal Worthy Journey">
+				  <span class="home-link-title">Journal Worthy Journey</span>
+			  </a>
+			</div>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/journalworthyjourney.com/">Home</a></li>
+					<li class="nav-item"><a href="/journalworthyjourney.com/blog/">Archive</a></li>
+					<li class="nav-item"><a href="/journalworthyjourney.com/about/">About</a></li>
+					<li class="nav-item"><a href="/journalworthyjourney.com/feed/feed.xml">Feed</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+
+
+<h1 id="episode-1-a-journey-begins-heading-west">Episode 1: A Journey Begins, Heading West</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2022-05-12">12 May 2022</time></li>
+	<li><a href="/journalworthyjourney.com/tags/season-1/" class="post-tag">season-1</a>, </li>
+	<li><a href="/journalworthyjourney.com/tags/videos/" class="post-tag">videos</a></li>
+</ul>
+
+<iframe loading="lazy" allowfullscreen="true" title="A Journey Begins, Heading West" width="600" height="600" src="https://www.youtube.com/embed/m3Dh9gsibX8?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<p>Welcome to our vlog, capturing information related to and the travels of Brent and Tayler Spotswood. This is the first video that we put together that documents a bit of our background, how we came together, deciding to travel, getting a rig, getting it ready, and hitting the road.</p>
+<h2 id="a-journey-begins">A Journey Begins!</h2>
+<p>This is where our traveling journey begins! With Brent working a job remote for years, we figured why not take advantage and go explore the country while he continued to work. Rather than looking outside at our backyard, he could enjoy the view from different locations across the United States! After researching this plan for months online, attending a few RV shows, and visiting dealerships, we made our decision to take the plunge! By Fall of 2019 we had completed our checklist!</p>
+<ul>
+<li>Sold our house that Brent had owned since 2011 — CHECK!</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/OgxyKl2hAL-2048.avif 2048w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/OgxyKl2hAL-2048.webp 2048w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/OgxyKl2hAL-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
+<ul>
+<li>Bought a new Ford F350 Dually truck — CHECK!</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/W3RWhg-gDI-2048.avif 2048w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/W3RWhg-gDI-2048.webp 2048w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/W3RWhg-gDI-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
+<ul>
+<li>Bought our 41’ home on wheels—a Montana 3813MS — CHECK!</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/w8WHHwo06c-1536.avif 1536w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/w8WHHwo06c-1536.webp 1536w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/w8WHHwo06c-1536.jpeg" alt="" width="1536" height="2048"></picture></p>
+<p>The truck we found locally in Texas, but to get a great deal on an RV we had to travel to Indiana.  (PS If anyone is looking to get an RV, call Tiara RV Sales in Elkhart!! They are awesome!!)</p>
+<p>With holidays nearing we decided that once we got the rig we would drive back to Texas and stay till Spring then start our trip to the western US.  This plan allowed us to go through our storage unit, enjoy the holidays with family, and work on some projects to get the rig ready for travel.  One specific project was taking the back couch out and putting in a desk with monitors.</p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/An9cXH9ifw-768.avif 768w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/An9cXH9ifw-768.webp 768w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/An9cXH9ifw-768.jpeg" alt="" width="768" height="1024"></picture></p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/-LXu4MIYaq-1024.avif 1024w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/-LXu4MIYaq-1024.webp 1024w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/-LXu4MIYaq-1024.jpeg" alt="" width="1024" height="768"></picture></p>
+<h2 id="texas">Texas</h2>
+<p>RV Park: <em>Lakeland RV Ranch</em> in Farmersville, TX (November 2019-March 2020)</p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/9o7rjAXY49-924.avif 924w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/9o7rjAXY49-924.webp 924w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/9o7rjAXY49-924.jpeg" alt="A picture containing sky, outdoor, ground, truck Description automatically generated" width="924" height="531"></picture></p>
+<p>They didn’t have the largest RV spots but they were gravel and it was big enough for the rig and our 2 cars so we made it work.  The park was on an actual ranch, with a chicken/rooster coop, a pond with a wooden stage built on it, and even horses!   But ooohhhh… those roosters.  We were reminded every morning rather loudly around 5am that they lived nearby!  Even though there were some aspects of the park that could have been better, it was a decent first park to stay at long term while still getting our feet wet to our new way of life.</p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/0GPf1QMNUW-852.avif 852w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/0GPf1QMNUW-852.webp 852w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/0GPf1QMNUW-852.jpeg" alt="A picture containing grass, sky, outdoor, field Description automatically generated" width="852" height="512"></picture></p>
+<h2 id="spain-january-23-february-3-2020">Spain (January 23-February 3 2020)</h2>
+<p>With our time in Dallas coming to a close, we had one last big thing we wanted to do before we hit the road.  It was time to go to SPAIN to see my little sister, Andie, play pro volleyball in person! She had been playing pro for the past 3 years but we weren’t able to go see her play in person until now!  Our week in Spain was fantastic exploring sites in Barcelona, Madrid and Granada!  From the tapas and sangria to the detailed cathedrals and museums, it was such a fun, incredible experience and we can’t wait to go visit again in the future!  (Future blog on Spain to come later but here are a few pictures to tease!)</p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/sVMmVNDMGp-768.avif 768w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/sVMmVNDMGp-768.webp 768w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/sVMmVNDMGp-768.jpeg" alt="" width="768" height="1024"></picture></p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/JKWt_l605z-768.avif 768w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/JKWt_l605z-768.webp 768w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/JKWt_l605z-768.jpeg" alt="" width="768" height="1024"></picture></p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/V2iuV4CCQW-768.avif 768w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/V2iuV4CCQW-768.webp 768w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/V2iuV4CCQW-768.jpeg" alt="" width="768" height="1024"></picture></p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/0lRtodFu7h-1024.avif 1024w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/0lRtodFu7h-1024.webp 1024w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/0lRtodFu7h-1024.jpeg" alt="" width="1024" height="768"></picture></p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/OQJFM17nOq-768.avif 768w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/OQJFM17nOq-768.webp 768w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/OQJFM17nOq-768.jpeg" alt="" width="768" height="1024"></picture></p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/YqHaZR6A5f-768.avif 768w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/YqHaZR6A5f-768.webp 768w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/YqHaZR6A5f-768.jpeg" alt="" width="768" height="1024"></picture></p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/27sFJvyVZz-768.avif 768w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/27sFJvyVZz-768.webp 768w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/27sFJvyVZz-768.jpeg" alt="" width="768" height="1024"></picture></p>
+<h2 id="abilene-tx-march-15-march-28-2020">Abilene, TX (March 15-March 28 2020)</h2>
+<p>RV Park: <em>Whistlestop RV</em></p>
+<p>Once back in Texas, it was time to get packed up and hit the road to Abilene.  Our goal was to leave Texas before Spring so we could avoid all the rain, hail and tornados.  However, we didn’t want to be too far west as Dawn’s wedding (my old roomie) was approaching in San Antonio and we wanted to be able to drive there. So we settled on Abilene, TX.  We had been looking forward to hitting the road, but our adventure definitely started off a bit rocky.  Our day of departure was overcast and a little rainy, but the drive ended up being pretty smooth… that is until a wreck caused a freeway shutdown about 20 miles outside of the city.  After we took a detour on some backroads we eventually made it to our new RV Park.  What a great little park right off the highway that had very large and spaced-out sites.  There were, however, a few common areas that were closed though due to the pandemic. Coincidentally, our first week traveling just so happened to be THE first week of Covid-19 lockdowns across the country. So many common areas at the rv park were closed and restaurants around us started closing along with store shelves becoming bare from panic buyers.  Our adventure was off to a great start.</p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/PPBjy7bMFS-2048.avif 2048w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/PPBjy7bMFS-2048.webp 2048w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/PPBjy7bMFS-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/45Bfiv5_F4-2048.avif 2048w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/45Bfiv5_F4-2048.webp 2048w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/45Bfiv5_F4-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
+<p>I had been battling a cold since we left Dallas and in the short time here it continued to worsen. Within a few days I ended up having to go to the ER twice.  The first time because I REALLY wasn’t feeling well, and the second time due to excruciating pain in my left ribs.  Unfortunately, with covid restrictions growing Brent was only able to go into the ER with me the first time.  After giving me some meds and checking that nothing was broken in a chest x-ray they sent me on my way.  They thought the pain may be from a strained muscle from nonstop coughing for 5 days. SPOILER: That ended up being VERY incorrect information.</p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/sIBfTxK4iK-2048.avif 2048w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/sIBfTxK4iK-2048.webp 2048w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/sIBfTxK4iK-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
+<p>We also had a close call with a tornado, going past just 5 miles north of where we were staying.  Too close for comfort.    Covid closures seemed to just continue to be more and more frequent.  Even our next park in Roswell cancelled on us so we continued our stay in Abilene for an extra week.</p>
+<p><picture><source type="image/avif" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/FM1Ps6kRrA-1125.avif 1125w"><source type="image/webp" srcset="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/FM1Ps6kRrA-1125.webp 1125w"><img loading="lazy" decoding="async" src="/journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/FM1Ps6kRrA-1125.jpeg" alt="" width="1125" height="1099"></picture></p>
+<p>With as much pain as I was in, we made the difficult decision to have Brent drive me to meet my parents and I would head home and spend the foreseeable future back in Dallas to see my doctors to find out what was wrong.  Then once I healed or got better, I would rejoin him on the road.  After dropping me off, Brent headed back to Abilene where he would continue to stay to work and watch the rig and at week’s end would continue on to Albuquerque New Mexico.</p>
+<p>The next day I had an emergency appointment with my primary care doctor who then sent me to an orthopedic pain doctor.  The doctor thought it was a pinched nerve in my back so he started me on some meds and I was referred to a physical therapist.  This therapy was quite painful… and months later I would find out that I in fact DID have a fractured rib bone, not a strained muscle, so therapy may have made things worse for me in the long run and we didn’t know it at the time.  With me still needing more time to heal, Brent continued on without me to New Mexico at that end of that week and I was to unexpectedly spend my birthday away from him at home.  With all the Covid shutdowns paired with my pain and lingering sickness, on top of not being able to spend the day with my husband, it was a very odd birthday.  The one exciting thing was that my sister got home safely from Spain and I was able to see her and spend some time with her before I rejoined Brent in New Mexico.</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-next">Next →<br><a href="/journalworthyjourney.com/blog/episode-2-new-mexico/">Episode 2: New Mexico</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em></p>
+		</footer>
+
+		<!-- This page `/blog/episode-1-a-journey-begins-heading-west/` was built on 2025-05-06T23:28:20.074Z -->
+		<script type="module" src="/journalworthyjourney.com/dist/xbxy_EL6cU.js"></script>
+	</body>
+</html>

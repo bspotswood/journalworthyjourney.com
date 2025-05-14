@@ -1,5 +1,5 @@
 ---
-title: 'Episode 6: Meteor Crater'
+title: "Episode 6: Meteor Crater"
 authors:
   - name: JWJ
     url: https://journalworthyjourney.com
@@ -21,9 +21,8 @@ tags:
   - season-1
   - videos
 ---
-<iframe loading="lazy" allowfullscreen="true" title="A meteor left this giant hole in Arizona - She drives the RV for the first time" width="600" height="600" src="https://www.youtube.com/embed/ZnxyXd7WYyk?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
-.ose-youtube.ose-uid-b1c1c184ea0384d512ef7d2fa7c10ae5 { width: 848px !important; height: 480px!important; max-height: 480px !important; max-width: 100%; } .ose-youtube.ose-uid-b1c1c184ea0384d512ef7d2fa7c10ae5>iframe { height: 480px !important; max-height: 480px !important; width: 100%; position: relative !important; } .ose-uid-b1c1c184ea0384d512ef7d2fa7c10ae5 .wistia\_embed { max-width: 100%; } .alignright .ose-wistia.ose-uid-b1c1c184ea0384d512ef7d2fa7c10ae5{ margin-left: auto; } .alignleft .ose-wistia.ose-uid-b1c1c184ea0384d512ef7d2fa7c10ae5{ margin-right: auto; } .aligncenter .ose-wistia.ose-uid-b1c1c184ea0384d512ef7d2fa7c10ae5{ margin: auto; } .ose-uid-b1c1c184ea0384d512ef7d2fa7c10ae5 img.watermark{ display: none; } .ose-matterport.ose-uid-b1c1c184ea0384d512ef7d2fa7c10ae5 { position: relative; width: 848px !important; height: 480px !important; max-width: 100%; } .ose-giphy.ose-uid-b1c1c184ea0384d512ef7d2fa7c10ae5 img{ position: relative; width: 848px !important; height: 480px !important; max-width: 100%; }
+<iframe loading="lazy" allowfullscreen="true" title="A meteor left this giant hole in Arizona - She drives the RV for the first time" width="600" height="600" src="https://www.youtube.com/embed/ZnxyXd7WYyk?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 Meteor Crater is basically a giant divot that was punched into the earth by a meteor. This is unlike most other craters that you will encounter on earth, which are most likely to have been created by volcanic activity. They have an incredible visitor center where you can learn more about the impact event, the meteor, the efforts to mine resources from it, NASA and Hollywood’s usage of the site, and more. They also offer tours along a portion of the ridge and plenty of viewing opportunities on various decks. We weren’t sure what to expect in visiting a hole in the ground, but the visitor center and guides along with the views really made it worth the stop!
 

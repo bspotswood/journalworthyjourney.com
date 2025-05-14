@@ -1,5 +1,5 @@
 ---
-title: 'Episode 14: RedRock RV Park'
+title: "Episode 14: RedRock RV Park"
 authors:
   - name: JWJ
     url: https://journalworthyjourney.com
@@ -22,5 +22,3 @@ tags:
   - videos
 ---
 <iframe loading="lazy" allowfullscreen="true" title="RedRock RV Park | Full Time RV Travels | Episode 14" width="600" height="600" src="https://www.youtube.com/embed/_LRFjWau2-U?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
-.ose-youtube.ose-uid-cb70c15da7221d5e44f0a51270f9e251 { width: 848px !important; height: 480px!important; max-height: 480px !important; max-width: 100%; } .ose-youtube.ose-uid-cb70c15da7221d5e44f0a51270f9e251>iframe { height: 480px !important; max-height: 480px !important; width: 100%; position: relative !important; } .ose-uid-cb70c15da7221d5e44f0a51270f9e251 .wistia\_embed { max-width: 100%; } .alignright .ose-wistia.ose-uid-cb70c15da7221d5e44f0a51270f9e251{ margin-left: auto; } .alignleft .ose-wistia.ose-uid-cb70c15da7221d5e44f0a51270f9e251{ margin-right: auto; } .aligncenter .ose-wistia.ose-uid-cb70c15da7221d5e44f0a51270f9e251{ margin: auto; } .ose-uid-cb70c15da7221d5e44f0a51270f9e251 img.watermark{ display: none; } .ose-matterport.ose-uid-cb70c15da7221d5e44f0a51270f9e251 { position: relative; width: 848px !important; height: 480px !important; max-width: 100%; } .ose-giphy.ose-uid-cb70c15da7221d5e44f0a51270f9e251 img{ position: relative; width: 848px !important; height: 480px !important; max-width: 100%; }

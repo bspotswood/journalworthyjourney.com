@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.jwj-gallery:focus, .jwj-gallery:focus-within {
+  outline: none; /* Remove default outline */
+}
+
 .jwj-gallery-main {
   position: relative;
   margin-bottom: 1rem;

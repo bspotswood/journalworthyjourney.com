@@ -315,3 +315,25 @@ heading-anchors h1{
 h2 {
 	font-size: 2rem;
 }
+
+/* Green checkboxes unordered list */
+.checklist {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
+.checklist li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+

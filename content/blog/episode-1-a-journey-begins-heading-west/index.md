@@ -28,53 +28,51 @@ Welcome to our vlog, capturing information related to and the travels of Brent a
 
 This is where our traveling journey begins! With Brent working a job remote for years, we figured why not take advantage and go explore the country while he continued to work. Rather than looking outside at our backyard, he could enjoy the view from different locations across the United States! After researching this plan for months online, attending a few RV shows, and visiting dealerships, we made our decision to take the plunge! By Fall of 2019 we had completed our checklist!
 
--   Sold our house that Brent had owned since 2011 — CHECK!
+<ul class="checklist">
+  <li>Sold our house that Brent had owned since 2011 — CHECK!</li>
+  <li>Bought a new Ford F350 Dually truck — CHECK!</li>
+  <li>Bought our 41' home on wheels—a Montana 3813MS — CHECK!</li>
+</ul>
 
-![](IMG_20191016_074721-2048x1536-s0aWrgscWxSF.jpg)
-
--   Bought a new Ford F350 Dually truck — CHECK!
-
-![](IMG_20191026_165030-2048x1536-eRKvnJktCpwD.jpg)
-
--   Bought our 41’ home on wheels—a Montana 3813MS — CHECK!
-
-![](IMG_20191104_152057-1536x2048-92Ny67CX26qt.jpg)
+<img src="signing-house-sales-constract.jpg" alt="Tayler and Brent signing the house sales contract" width="250" loading="lazy">
+<img src="trading-in-nissan-titan-for-new-ford-f350.jpg" alt="Brent trading in his Nissan Titan for a new Ford F350" width="250" loading="lazy">
+<img src="picking-up-our-new-home-keystone-montana-3813ms.jpg" alt="Picking up our new home Keystone Montana 3813MS" width="250" loading="lazy">
 
  The truck we found locally in Texas, but to get a great deal on an RV we had to travel to Indiana.  (PS If anyone is looking to get an RV, call Tiara RV Sales in Elkhart!! They are awesome!!)  
 
 With holidays nearing we decided that once we got the rig we would drive back to Texas and stay till Spring then start our trip to the western US.  This plan allowed us to go through our storage unit, enjoy the holidays with family, and work on some projects to get the rig ready for travel.  One specific project was taking the back couch out and putting in a desk with monitors. 
 
-![](IMG_20191202_221434-768x1024-R4M3RfbIxCN8.jpg)
+<img src="finishing-new-desk-surface.jpg" alt="Brent applying a final coat of stain to the new desk surface" width="250" loading="lazy">
 
-![](IMG_20191205_172050-1-1024x768-OzqZWliNsXaN.jpg)
+<img src="new-desk-in-back-of-rv-with-chairs-and-monitors.jpg" alt="New desk in back of RV with chairs and monitors" width="444" loading="lazy">
 
 ## Texas
 
 RV Park: _Lakeland RV Ranch_ in Farmersville, TX (November 2019-March 2020)
 
-![A picture containing sky, outdoor, ground, truck Description automatically generated](J91-tJei-95WWHsik_4aJknyqaK4p4-hqoiGhuSsfhm.jpeg)
+<img src="truck-with-rv-in-site-at-lakeland-rv-ranch.jpg" alt="Truck with RV in site at Lakeland RV Ranch" width="600" loading="lazy">
 
 They didn’t have the largest RV spots but they were gravel and it was big enough for the rig and our 2 cars so we made it work.  The park was on an actual ranch, with a chicken/rooster coop, a pond with a wooden stage built on it, and even horses!   But ooohhhh… those roosters.  We were reminded every morning rather loudly around 5am that they lived nearby!  Even though there were some aspects of the park that could have been better, it was a decent first park to stay at long term while still getting our feet wet to our new way of life.
 
-![A picture containing grass, sky, outdoor, field Description automatically generated](yow4VtPPyX85hQcagUtQ3-Lx2GOi6L-L7YZLcHRJpDf.jpeg)
+<img src="chicken-coops-at-lakeland-rv-ranch.jpg" alt="Chicken coops at Lakeland RV Ranch" width="600" loading="lazy">
 
 ## Spain (January 23-February 3 2020)
 
 With our time in Dallas coming to a close, we had one last big thing we wanted to do before we hit the road.  It was time to go to SPAIN to see my little sister, Andie, play pro volleyball in person! She had been playing pro for the past 3 years but we weren’t able to go see her play in person until now!  Our week in Spain was fantastic exploring sites in Barcelona, Madrid and Granada!  From the tapas and sangria to the detailed cathedrals and museums, it was such a fun, incredible experience and we can’t wait to go visit again in the future!  (Future blog on Spain to come later but here are a few pictures to tease!)
 
-![](IMG_20200125_053607-768x1024-leqcSIj2n0WD.jpg)
+<img src="selfie-at-the-Cathedral-of-the-Holy-Cross-and-Saint-Eulalia.jpg" alt="Selfie at the Cathedral of the Holy Cross and Saint Eulalia" width="200" loading="lazy">
 
-![](IMG_20200126_105239-768x1024-rgW6urYQwqQ4.jpg)
+<img src="tayler-and-andie-meeting-after-volleyball-match-in-spain.jpg" alt="Tayler and Andie meeting after volleyball match in Spain" width="200" loading="lazy">
 
-![](IMG_20200127_035010-768x1024-razTO10kCYYE.jpg)
+<img src="sisters-at-la-sagrada-familia.jpg" alt="Sisters at La Sagrada Familia" width="200" loading="lazy">
 
-![](IMG_20200128_055423-1024x768-xp5OkDCo9iYF.jpg)
+<img src="selfie-with-alhambra-in-the-background.jpg" alt="Selfie with Alhambra in the background" width="200" loading="lazy">
 
-![](IMG_20200131_022430-768x1024-YCCGUQk3ZZP7.jpg)
+<img src="selfie-at-royal-palace-of-madrid.jpg" alt="Selfie at Royal Palace of Madrid" width="200" loading="lazy">
 
-![](IMG_20200201_120426-768x1024-o1xD18Ub9wqj.jpg)
+<img src="andie-playing-in-volleyball-match.jpg" alt="Andie playing in volleyball match" width="200" loading="lazy">
 
-![](IMG_20200129_050030-768x1024-6vWBGJxeoXDP.jpg)
+<img src="reflecting-pool-in-alhambra.jpg" alt="Reflecting pool in Alhambra" width="200" loading="lazy">
 
 ## Abilene, TX (March 15-March 28 2020)
 
@@ -82,17 +80,17 @@ RV Park: _Whistlestop RV_ 
 
 Once back in Texas, it was time to get packed up and hit the road to Abilene.  Our goal was to leave Texas before Spring so we could avoid all the rain, hail and tornados.  However, we didn’t want to be too far west as Dawn’s wedding (my old roomie) was approaching in San Antonio and we wanted to be able to drive there. So we settled on Abilene, TX.  We had been looking forward to hitting the road, but our adventure definitely started off a bit rocky.  Our day of departure was overcast and a little rainy, but the drive ended up being pretty smooth… that is until a wreck caused a freeway shutdown about 20 miles outside of the city.  After we took a detour on some backroads we eventually made it to our new RV Park.  What a great little park right off the highway that had very large and spaced-out sites.  There were, however, a few common areas that were closed though due to the pandemic. Coincidentally, our first week traveling just so happened to be THE first week of Covid-19 lockdowns across the country. So many common areas at the rv park were closed and restaurants around us started closing along with store shelves becoming bare from panic buyers.  Our adventure was off to a great start.
 
-![](IMG_20200315_183310-2048x1536-pH510xPiolwh.jpg)
+<img src="rv-site-whistlestop-rv-park.jpg" alt="RV site at Whistlestop RV Park" width="400" loading="lazy">
 
-![](IMG_20200326_195029-2048x1536-ugJ6xltmVqGH.jpg)
+<img src="closed-playground-at-whistlestop-rv-park.jpg" alt="Closed playground at Whistlestop RV Park" width="400" loading="lazy">
 
 I had been battling a cold since we left Dallas and in the short time here it continued to worsen. Within a few days I ended up having to go to the ER twice.  The first time because I REALLY wasn’t feeling well, and the second time due to excruciating pain in my left ribs.  Unfortunately, with covid restrictions growing Brent was only able to go into the ER with me the first time.  After giving me some meds and checking that nothing was broken in a chest x-ray they sent me on my way.  They thought the pain may be from a strained muscle from nonstop coughing for 5 days. SPOILER: That ended up being VERY incorrect information.
 
-![](IMG_20200320_022639-2048x1536-IZSDlKo17tnz.jpg)
+<img src="tayler-er-visit-abilene.jpg" alt="Tayler in the ER in Abilene" width="400" loading="lazy">
 
 We also had a close call with a tornado, going past just 5 miles north of where we were staying.  Too close for comfort.    Covid closures seemed to just continue to be more and more frequent.  Even our next park in Roswell cancelled on us so we continued our stay in Abilene for an extra week.  
 
-![](IMG_20200319_013835-EjBGCsiAnreg.jpg)
+<img src="tornado-warning.jpg" alt="Tornado warning" width="400" loading="lazy">
 
 With as much pain as I was in, we made the difficult decision to have Brent drive me to meet my parents and I would head home and spend the foreseeable future back in Dallas to see my doctors to find out what was wrong.  Then once I healed or got better, I would rejoin him on the road.  After dropping me off, Brent headed back to Abilene where he would continue to stay to work and watch the rig and at week’s end would continue on to Albuquerque New Mexico.  
 

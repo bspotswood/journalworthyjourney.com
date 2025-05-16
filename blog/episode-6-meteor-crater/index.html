@@ -10,6 +10,7 @@
 		
 		
 		
+		
 		<style>/* This is an arbitrary CSS string added to the bundle */
 @import url("/fonts/roboto/index.css");
 @import url("/fonts/roboto-mono/index.css");
@@ -349,6 +350,144 @@ h2 {
   left: 0;
   top: 0;
 }
+.jwj-gallery {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.jwj-gallery-main {
+  position: relative;
+  margin-bottom: 1rem;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.jwj-gallery-viewer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: default;
+}
+
+.jwj-gallery-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.jwj-gallery-slide.active {
+  display: flex;
+}
+
+.jwj-gallery-slide picture,
+.jwj-gallery-slide img,
+.jwj-gallery-slide img[width][height] {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  pointer-events: none;
+}
+
+.jwj-gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.2s;
+}
+
+.jwj-gallery-nav:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.jwj-gallery-prev {
+  left: 10px;
+}
+
+.jwj-gallery-next {
+  right: 10px;
+}
+
+.jwj-gallery-thumbnails {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.jwj-gallery-thumbnails-scroll {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.jwj-gallery-thumbnail {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  border: 2px solid transparent;
+}
+
+.jwj-gallery-thumbnail:hover {
+  opacity: 0.8;
+}
+
+.jwj-gallery-thumbnail.active {
+  opacity: 1;
+  border-color: var(--color-primary, #0d6efd);
+}
+
+.jwj-gallery-thumbnail img,
+.jwj-gallery-thumbnail img[width][height] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+@media (max-width: 768px) {
+  .jwj-gallery-nav {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  
+  .jwj-gallery-thumbnail {
+    width: 60px;
+    height: 45px;
+  }
+}
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -556,11 +695,11 @@ pre[class*="language-diff-"] {
 	<li><a href="/tags/videos/" class="post-tag">videos</a></li>
 </ul>
 
-<iframe loading="lazy" allowfullscreen="true" title="A meteor left this giant hole in Arizona - She drives the RV for the first time" width="600" height="600" src="https://www.youtube.com/embed/ZnxyXd7WYyk?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<iframe allowfullscreen="true" title="A meteor left this giant hole in Arizona - She drives the RV for the first time" width="600" height="600" src="https://www.youtube.com/embed/ZnxyXd7WYyk?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 <p>Meteor Crater is basically a giant divot that was punched into the earth by a meteor. This is unlike most other craters that you will encounter on earth, which are most likely to have been created by volcanic activity. They have an incredible visitor center where you can learn more about the impact event, the meteor, the efforts to mine resources from it, NASA and Hollywood’s usage of the site, and more. They also offer tours along a portion of the ridge and plenty of viewing opportunities on various decks. We weren’t sure what to expect in visiting a hole in the ground, but the visitor center and guides along with the views really made it worth the stop!</p>
 <p>One of the other popular attractions that opened in Arizona during our time extension was the Meteor Crater! But before we go visit, we wanted to make dinner on our newly purchased 17″ Blackstone grill. We were excited to use it and the weather made for a perfect grilling night. This grill expanded our cooking capabilities while we traveled. Instead of having a large grill with legs, this tabletop option allowed for more grilling flexibility and was easier and smaller to keep in storage. For our first use, Brent decided he would grill some juicy steaks and grilled onions! The grill ended up working fantasic and the food was delicious!!!</p>
-<p><picture><source type="image/avif" srcset="/blog/episode-6-meteor-crater/UC1xz7t04t-2048.avif 2048w"><source type="image/webp" srcset="/blog/episode-6-meteor-crater/UC1xz7t04t-2048.webp 2048w"><img loading="lazy" decoding="async" src="/blog/episode-6-meteor-crater/UC1xz7t04t-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-6-meteor-crater/HAjfqwCaTG-1920.avif 1920w"><source type="image/webp" srcset="/blog/episode-6-meteor-crater/HAjfqwCaTG-1920.webp 1920w"><img loading="lazy" decoding="async" src="/blog/episode-6-meteor-crater/HAjfqwCaTG-1920.jpeg" alt="" width="1920" height="2560"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/episode-6-meteor-crater/UC1xz7t04t-2048.avif 2048w"><source type="image/webp" srcset="/blog/episode-6-meteor-crater/UC1xz7t04t-2048.webp 2048w"><img loading="eager" decoding="async" src="/blog/episode-6-meteor-crater/UC1xz7t04t-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/episode-6-meteor-crater/HAjfqwCaTG-1920.avif 1920w"><source type="image/webp" srcset="/blog/episode-6-meteor-crater/HAjfqwCaTG-1920.webp 1920w"><img loading="eager" decoding="async" src="/blog/episode-6-meteor-crater/HAjfqwCaTG-1920.jpeg" alt="" width="1920" height="2560"></picture></p>
 <p>Meteor Crater Visit</p>
 <p>The next morning we made the drive to visit the Meteor Crater! Since it was only open at 50% capacity for the opening weekend, I made sure to get our tickets online before we arrived. For those that don’t know, the Meteor Crater is a giant bowl cavity on earth’s surface, east of Flagstaff, that measures 550ft deep and almost a mile in width. Roughly 50,000 years ago, a meteorite consisting of iron and nickel, with a width of 150 feet and a weight of about 300,000 tons, collided with the earth going 26,000 miles per hour. The impact was so massive, it was about 150 times the force of the atomic bomb! It even overturned and inverted the layers of strata within the crater. This means the rock layers are stacked in reverse order than they occurred naturally, with the oldest layers (from 265 million years ago) on top.</p>
 <p>Thankfully, the crater has had limited erosion and been well preserved, due to the desert climate, so visitors are able to come enjoy this unique national landmark. In the early 20th century, the Barringer family not only purchased the crater and the land surrounding it, but they filed mining claims to it as well. Since Daniel Barrienger was the first to suggest the crater formed from a meteorite’s impact, the crater is also referred to as the Barringer Meteorite Crater. Unless you go and visit in person, you never truly will understand the massive scale of this crater. It is incredible to see. Once there, you have the option to view the crater by an indoor viewing area, observation decks, self-guided trails or you can take a guided tour along the rim. Be cautious of the wind if you do take the guided tour! They can be quite strong and took people’s hats off!</p>
@@ -577,7 +716,8 @@ pre[class*="language-diff-"] {
 			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em></p>
 		</footer>
 
-		<!-- This page `/blog/episode-6-meteor-crater/` was built on 2025-05-16T05:30:33.895Z -->
+		<!-- This page `/blog/episode-6-meteor-crater/` was built on 2025-05-16T08:44:47.045Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
+		<script type="module" src="/js/image-gallery.js"></script>
 	</body>
 </html>

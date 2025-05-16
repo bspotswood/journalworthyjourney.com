@@ -10,6 +10,7 @@
 		
 		
 		
+		
 		<style>/* This is an arbitrary CSS string added to the bundle */
 @import url("/fonts/roboto/index.css");
 @import url("/fonts/roboto-mono/index.css");
@@ -349,6 +350,144 @@ h2 {
   left: 0;
   top: 0;
 }
+.jwj-gallery {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.jwj-gallery-main {
+  position: relative;
+  margin-bottom: 1rem;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.jwj-gallery-viewer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: default;
+}
+
+.jwj-gallery-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.jwj-gallery-slide.active {
+  display: flex;
+}
+
+.jwj-gallery-slide picture,
+.jwj-gallery-slide img,
+.jwj-gallery-slide img[width][height] {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  pointer-events: none;
+}
+
+.jwj-gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.2s;
+}
+
+.jwj-gallery-nav:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.jwj-gallery-prev {
+  left: 10px;
+}
+
+.jwj-gallery-next {
+  right: 10px;
+}
+
+.jwj-gallery-thumbnails {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.jwj-gallery-thumbnails-scroll {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.jwj-gallery-thumbnail {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  border: 2px solid transparent;
+}
+
+.jwj-gallery-thumbnail:hover {
+  opacity: 0.8;
+}
+
+.jwj-gallery-thumbnail.active {
+  opacity: 1;
+  border-color: var(--color-primary, #0d6efd);
+}
+
+.jwj-gallery-thumbnail img,
+.jwj-gallery-thumbnail img[width][height] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+@media (max-width: 768px) {
+  .jwj-gallery-nav {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  
+  .jwj-gallery-thumbnail {
+    width: 60px;
+    height: 45px;
+  }
+}
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -556,20 +695,46 @@ pre[class*="language-diff-"] {
 	<li><a href="/tags/videos/" class="post-tag">videos</a></li>
 </ul>
 
-<iframe loading="lazy" allowfullscreen="true" title="New Mexico - Albuquerque and Santa Fe area" width="600" height="600" src="https://www.youtube.com/embed/1sBCI2aVjz8?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<iframe allowfullscreen="true" title="New Mexico - Albuquerque and Santa Fe area" width="600" height="600" src="https://www.youtube.com/embed/1sBCI2aVjz8?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 <p>Brent heads onward to New Mexico while Tayler remains with her parents back in the Dallas area. In our previous episode, Tayler had gone back to seek treatment for pain issues she was having related to a cough. Not much could be done due to the covid lockdowns at the time, so she rejoins Brent. We then get take in some sights around Albuquerque and Santa Fe. It was very locked down at the time, but at least we were able to get in to the KOA in Bernalillo.</p>
 <h2 id="headed-to-new-mexico">Headed to New Mexico</h2>
 <p>Dates: <strong>March 29- April 25, 2020</strong></p>
 <p>RV Park: <em><strong>Albuquerque North/ Bernalillo KOA Journey</strong></em></p>
 <p>Our next stop in our adventure West was north of Albuquerque to Bernalillo! Brent originally was supposed to fly out to Minneapolis for work, so we wanted easy access to a large airport for him.  He luckily never had to travel up there thanks to Covid-19.  With me still trying to heal in Dallas, Brent traveled there by himself! It was a 8 hour drive for him and would be his first time pulling the rig by himself! Luckily, it was smooth and he didn’t encounter any problems!</p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/zduB7MfqhW-2048.avif 2048w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/zduB7MfqhW-2048.webp 2048w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/zduB7MfqhW-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/zduB7MfqhW-2048.avif 2048w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/zduB7MfqhW-2048.webp 2048w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/zduB7MfqhW-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
 <p>After a week of physical therapy, and medications to help with the pain, the doctors felt time and rest were the only treatments left for my healing. This meant I would be able to rejoin Brent in New Mexico for our travels but would need to take it very easy! Brent agreed to meet me, my mom and my sister at the halfway point of the drive to transfer me over to him to continue with him on our journey across the country!</p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/-w6saJeqVh-225.avif 225w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/-w6saJeqVh-225.webp 225w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/-w6saJeqVh-225.png" alt="" width="225" height="300"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/-w6saJeqVh-225.avif 225w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/-w6saJeqVh-225.webp 225w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/-w6saJeqVh-225.png" alt="" width="225" height="300"></picture></p>
 <p>For our month stay in the Albuquerque area, we stayed at the Albuquerque North/Bernalillo KOA Journey. Originally I thought we would be in a long, pull thru site on the left side of the park but it seems they don’t like to use those sites for the lengthier stays. Our site, P04, was a bit more SNUG than we anticipated, and we ended up barely fitting the truck and the rig in the allotted spot but we made it work! Even though we were a little cramped it was a decent campground. The outdoor decor was cute but most of the amenities were closed with Covid-19.</p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/QQmag5mIda-1511.avif 1511w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/QQmag5mIda-1511.webp 1511w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/QQmag5mIda-1511.png" alt="" width="1511" height="859"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/UtUzDfzUgS-1481.avif 1481w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/UtUzDfzUgS-1481.webp 1481w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/UtUzDfzUgS-1481.png" alt="" width="1481" height="970"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/O-u_hBNHRn-1656.avif 1656w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/O-u_hBNHRn-1656.webp 1656w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/O-u_hBNHRn-1656.png" alt="" width="1656" height="969"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/AieHa0QxVW-1493.avif 1493w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/AieHa0QxVW-1493.webp 1493w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/AieHa0QxVW-1493.png" alt="" width="1493" height="810"></picture></p>
+<div class="jwj-gallery" id="albuquerque-gallery">
+      <div class="jwj-gallery-main">
+        <button class="jwj-gallery-nav jwj-gallery-prev" aria-label="Previous image">&lt;</button>
+        <div class="jwj-gallery-viewer">
+          <div class="jwj-gallery-slide active" data-index="0">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/QQmag5mIda-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/QQmag5mIda-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/QQmag5mIda-850.png" alt="Cactus and wagon wheel sculptures at the KOA campground" width="850" height="483"></picture>
+            </div><div class="jwj-gallery-slide " data-index="1">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/UtUzDfzUgS-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/UtUzDfzUgS-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/UtUzDfzUgS-850.png" alt="Carved wood bear statues holding the KOA sign" width="850" height="556"></picture>
+            </div><div class="jwj-gallery-slide " data-index="2">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/O-u_hBNHRn-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/O-u_hBNHRn-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/O-u_hBNHRn-850.png" alt="The KOA check-in office" width="850" height="497"></picture>
+            </div><div class="jwj-gallery-slide " data-index="3">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/AieHa0QxVW-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/AieHa0QxVW-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/AieHa0QxVW-850.png" alt="The front view from our truck as we pull into our site" width="850" height="461"></picture>
+            </div>
+        </div>
+        <button class="jwj-gallery-nav jwj-gallery-next" aria-label="Next image">&gt;</button>
+      </div>
+      <div class="jwj-gallery-thumbnails">
+        <div class="jwj-gallery-thumbnails-scroll">
+          <div class="jwj-gallery-thumbnail active" data-index="0">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/QQmag5mIda-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/QQmag5mIda-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/QQmag5mIda-150.png" alt="Cactus and wagon wheel sculptures at the KOA campground" width="150" height="85"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="1">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/UtUzDfzUgS-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/UtUzDfzUgS-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/UtUzDfzUgS-150.png" alt="Carved wood bear statues holding the KOA sign" width="150" height="98"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="2">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/O-u_hBNHRn-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/O-u_hBNHRn-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/O-u_hBNHRn-150.png" alt="The KOA check-in office" width="150" height="87"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="3">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/AieHa0QxVW-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/AieHa0QxVW-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/AieHa0QxVW-150.png" alt="The front view from our truck as we pull into our site" width="150" height="81"></picture>
+            </div>
+        </div>
+      </div>
+    </div>
 <p>Not so sure we would want to stay there again but the park’s central location to things we wanted to see in the area and the view of the Sandia Mountains for our time there couldn’t be beat!</p>
 <p>During our time there we had a few things on our To Do list!</p>
 <ul>
@@ -580,37 +745,155 @@ pre[class*="language-diff-"] {
 </ul>
 <p>This episode we go to the first 2 on the list- Santa Fe and Pecos National Historical park! With me still healing from the rib pains, I still needed to take it pretty easy but really wanted to see around New Mexico! We also took some hikes by the Sandia Mountains, made some food in our little kitchen, and enjoyed some pretty sunsets!</p>
 <p>With it’s easy, across the highway, access to hikes next to the Sandia Mountains we tried to take advantage as many times as my rib pains would allow! While I was still in Dallas, Brent was able to scope out some of these trails ahead of time! What pretty, long range views we were able to see! It was a nice change to see mountains…. we DEFINITELY weren’t in Texas anymore!</p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/DWcOdH3RtD-1024.avif 1024w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/DWcOdH3RtD-1024.webp 1024w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/DWcOdH3RtD-1024.jpeg" alt="" width="1024" height="768"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/ow8Kp8Uz7k-1024.avif 1024w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/ow8Kp8Uz7k-1024.webp 1024w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/ow8Kp8Uz7k-1024.jpeg" alt="" width="1024" height="768"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/A390A84u50-1024.avif 1024w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/A390A84u50-1024.webp 1024w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/A390A84u50-1024.jpeg" alt="" width="1024" height="768"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/vum0RI4C3r-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/vum0RI4C3r-768.webp 768w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/vum0RI4C3r-768.jpeg" alt="" width="768" height="1024"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/xo0ymG1sTG-1024.avif 1024w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/xo0ymG1sTG-1024.webp 1024w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/xo0ymG1sTG-1024.jpeg" alt="" width="1024" height="768"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/_ct5ceLMuE-1024.avif 1024w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/_ct5ceLMuE-1024.webp 1024w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/_ct5ceLMuE-1024.jpeg" alt="" width="1024" height="768"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/tx09j10jFV-1024.avif 1024w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/tx09j10jFV-1024.webp 1024w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/tx09j10jFV-1024.jpeg" alt="" width="1024" height="768"></picture></p>
-<p>And check out these beautiful sunset colors!!</p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/CcZauOuQdm-2048.avif 2048w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/CcZauOuQdm-2048.webp 2048w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/CcZauOuQdm-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/zPivDg8wTB-2048.avif 2048w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/zPivDg8wTB-2048.webp 2048w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/zPivDg8wTB-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/kk7Ze3VGTQ-2048.avif 2048w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/kk7Ze3VGTQ-2048.webp 2048w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/kk7Ze3VGTQ-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
+<div class="jwj-gallery" id="sandia-mountains-gallery">
+      <div class="jwj-gallery-main">
+        <button class="jwj-gallery-nav jwj-gallery-prev" aria-label="Previous image">&lt;</button>
+        <div class="jwj-gallery-viewer">
+          <div class="jwj-gallery-slide active" data-index="0">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/DWcOdH3RtD-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/DWcOdH3RtD-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/DWcOdH3RtD-850.jpeg" alt="Tayler standing on a rocky trail in the Sandia Mountains" width="850" height="637"></picture>
+            </div><div class="jwj-gallery-slide " data-index="1">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/ow8Kp8Uz7k-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/ow8Kp8Uz7k-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/ow8Kp8Uz7k-850.jpeg" alt="Brent standing on a rocky trail in the Sandia Mountains" width="850" height="637"></picture>
+            </div><div class="jwj-gallery-slide " data-index="2">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/A390A84u50-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/A390A84u50-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/A390A84u50-850.jpeg" alt="A view from the Sandia Mountains looking down at the wide open valley below" width="850" height="637"></picture>
+            </div><div class="jwj-gallery-slide " data-index="3">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/vum0RI4C3r-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/vum0RI4C3r-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/vum0RI4C3r-768.jpeg" alt="A view of shrubs and trees from the Sandia Mountains with the valley in the background" width="768" height="1024"></picture>
+            </div><div class="jwj-gallery-slide " data-index="4">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/xo0ymG1sTG-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/xo0ymG1sTG-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/xo0ymG1sTG-850.jpeg" alt="Brent and Tayler taking a selfie amongst shrubs on the trail" width="850" height="637"></picture>
+            </div><div class="jwj-gallery-slide " data-index="5">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/_ct5ceLMuE-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/_ct5ceLMuE-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/_ct5ceLMuE-850.jpeg" alt="Tayler stands behind some cactus on the trail" width="850" height="637"></picture>
+            </div><div class="jwj-gallery-slide " data-index="6">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/tx09j10jFV-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/tx09j10jFV-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/tx09j10jFV-850.jpeg" alt="Our truck in the parking lot with the Sandia Mountains in the background" width="850" height="637"></picture>
+            </div>
+        </div>
+        <button class="jwj-gallery-nav jwj-gallery-next" aria-label="Next image">&gt;</button>
+      </div>
+      <div class="jwj-gallery-thumbnails">
+        <div class="jwj-gallery-thumbnails-scroll">
+          <div class="jwj-gallery-thumbnail active" data-index="0">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/DWcOdH3RtD-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/DWcOdH3RtD-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/DWcOdH3RtD-150.jpeg" alt="Tayler standing on a rocky trail in the Sandia Mountains" width="150" height="112"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="1">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/ow8Kp8Uz7k-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/ow8Kp8Uz7k-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/ow8Kp8Uz7k-150.jpeg" alt="Brent standing on a rocky trail in the Sandia Mountains" width="150" height="112"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="2">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/A390A84u50-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/A390A84u50-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/A390A84u50-150.jpeg" alt="A view from the Sandia Mountains looking down at the wide open valley below" width="150" height="112"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="3">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/vum0RI4C3r-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/vum0RI4C3r-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/vum0RI4C3r-150.jpeg" alt="A view of shrubs and trees from the Sandia Mountains with the valley in the background" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="4">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/xo0ymG1sTG-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/xo0ymG1sTG-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/xo0ymG1sTG-150.jpeg" alt="Brent and Tayler taking a selfie amongst shrubs on the trail" width="150" height="112"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="5">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/_ct5ceLMuE-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/_ct5ceLMuE-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/_ct5ceLMuE-150.jpeg" alt="Tayler stands behind some cactus on the trail" width="150" height="112"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="6">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/tx09j10jFV-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/tx09j10jFV-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/tx09j10jFV-150.jpeg" alt="Our truck in the parking lot with the Sandia Mountains in the background" width="150" height="112"></picture>
+            </div>
+        </div>
+      </div>
+    </div>
 <h2 id="pecos-national-historical-park">Pecos National Historical Park</h2>
 <p>On our first weekend there we decided to head north to take a hike through Pecos National Historical Park and then drive to downtown Santa Fe.  At Pecos, we decided to hike a couple miles at the Ancestral Sites Trail that weaves around some ancestral sites of the Pecos Pueblo, including a mission church.  Surrounded by beautiful views of the Sangre de Cristo mountains, this hike was quite peaceful and uninhabited .  With most national parks, or rather parks in general,  closed due to covid 19 restrictions, it was nice this historical park was open for us to enjoy its’ beauty.</p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/oBQncuW_zX-1024.avif 1024w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/oBQncuW_zX-1024.webp 1024w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/oBQncuW_zX-1024.jpeg" alt="" width="1024" height="768"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/nwZ-d_OfdT-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/nwZ-d_OfdT-768.webp 768w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/nwZ-d_OfdT-768.jpeg" alt="" width="768" height="1024"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/ktwMWCKLpt-1024.avif 1024w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/ktwMWCKLpt-1024.webp 1024w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/ktwMWCKLpt-1024.jpeg" alt="" width="1024" height="768"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/W5h2Kw1Q2g-1024.avif 1024w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/W5h2Kw1Q2g-1024.webp 1024w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/W5h2Kw1Q2g-1024.jpeg" alt="" width="1024" height="768"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/EcRNDI6yT3-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/EcRNDI6yT3-768.webp 768w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/EcRNDI6yT3-768.jpeg" alt="" width="768" height="1024"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/gM1GvZ-jc3-841.avif 841w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/gM1GvZ-jc3-841.webp 841w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/gM1GvZ-jc3-841.jpeg" alt="" width="841" height="1024"></picture></p>
+<div class="jwj-gallery" id="pecos-historical-park-gallery">
+      <div class="jwj-gallery-main">
+        <button class="jwj-gallery-nav jwj-gallery-prev" aria-label="Previous image">&lt;</button>
+        <div class="jwj-gallery-viewer">
+          <div class="jwj-gallery-slide active" data-index="0">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/oBQncuW_zX-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/oBQncuW_zX-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/oBQncuW_zX-850.jpeg" alt="Brent and Tayler take a selfie in front of Pecos National Historical Park sign" width="850" height="637"></picture>
+            </div><div class="jwj-gallery-slide " data-index="1">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/nwZ-d_OfdT-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/nwZ-d_OfdT-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/nwZ-d_OfdT-768.jpeg" alt="Historic ruins at Pecos" width="768" height="1024"></picture>
+            </div><div class="jwj-gallery-slide " data-index="2">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/ktwMWCKLpt-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/ktwMWCKLpt-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/ktwMWCKLpt-850.jpeg" alt="Brent and Tayler take a selfie in Pecos" width="850" height="637"></picture>
+            </div><div class="jwj-gallery-slide " data-index="3">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/W5h2Kw1Q2g-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/W5h2Kw1Q2g-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/W5h2Kw1Q2g-850.jpeg" alt="Mission church ruins at Pecos" width="850" height="637"></picture>
+            </div><div class="jwj-gallery-slide " data-index="4">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/EcRNDI6yT3-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/EcRNDI6yT3-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/EcRNDI6yT3-768.jpeg" alt="Large walls that remain standing from the mission church at Pecos" width="768" height="1024"></picture>
+            </div><div class="jwj-gallery-slide " data-index="5">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/gM1GvZ-jc3-841.avif 841w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/gM1GvZ-jc3-841.webp 841w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/gM1GvZ-jc3-841.jpeg" alt="A view down the walking path around Pecos" width="841" height="1024"></picture>
+            </div>
+        </div>
+        <button class="jwj-gallery-nav jwj-gallery-next" aria-label="Next image">&gt;</button>
+      </div>
+      <div class="jwj-gallery-thumbnails">
+        <div class="jwj-gallery-thumbnails-scroll">
+          <div class="jwj-gallery-thumbnail active" data-index="0">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/oBQncuW_zX-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/oBQncuW_zX-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/oBQncuW_zX-150.jpeg" alt="Brent and Tayler take a selfie in front of Pecos National Historical Park sign" width="150" height="112"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="1">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/nwZ-d_OfdT-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/nwZ-d_OfdT-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/nwZ-d_OfdT-150.jpeg" alt="Historic ruins at Pecos" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="2">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/ktwMWCKLpt-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/ktwMWCKLpt-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/ktwMWCKLpt-150.jpeg" alt="Brent and Tayler take a selfie in Pecos" width="150" height="112"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="3">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/W5h2Kw1Q2g-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/W5h2Kw1Q2g-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/W5h2Kw1Q2g-150.jpeg" alt="Mission church ruins at Pecos" width="150" height="112"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="4">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/EcRNDI6yT3-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/EcRNDI6yT3-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/EcRNDI6yT3-150.jpeg" alt="Large walls that remain standing from the mission church at Pecos" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="5">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/gM1GvZ-jc3-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/gM1GvZ-jc3-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/gM1GvZ-jc3-150.jpeg" alt="A view down the walking path around Pecos" width="150" height="182"></picture>
+            </div>
+        </div>
+      </div>
+    </div>
 <h2 id="santa-fe">Santa Fe</h2>
 <p>After our walk, we thought we would go see what Santa Fe had to offer…. but sadly covid had turned it to quite the ghost town.  What has been known as a lively city, full of culture and great shops, had been deserted.  With nothing open, we didn’t end up staying for very long.  All we were able to do was walk around the empty town square, see beautiful churches and window shop all the closed stores that had beautiful carvings and sculptures outside.  We look forward to eventually going back again to get the true Santa Fe experience, but we will have to settle on just our “peek” at it for now!</p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/wVLhZxPF8e-1024.avif 1024w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/wVLhZxPF8e-1024.webp 1024w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/wVLhZxPF8e-1024.jpeg" alt="" width="1024" height="768"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/Z13U8W4DG1-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/Z13U8W4DG1-768.webp 768w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/Z13U8W4DG1-768.jpeg" alt="" width="768" height="1024"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/cF4Fs5la_v-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/cF4Fs5la_v-768.webp 768w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/cF4Fs5la_v-768.jpeg" alt="" width="768" height="1024"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/Ep9uz1crgp-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/Ep9uz1crgp-768.webp 768w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/Ep9uz1crgp-768.jpeg" alt="" width="768" height="1024"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/kvYVMwZTzL-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/kvYVMwZTzL-768.webp 768w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/kvYVMwZTzL-768.jpeg" alt="" width="768" height="1024"></picture></p>
+<div class="jwj-gallery" id="santa-fe-gallery">
+      <div class="jwj-gallery-main">
+        <button class="jwj-gallery-nav jwj-gallery-prev" aria-label="Previous image">&lt;</button>
+        <div class="jwj-gallery-viewer">
+          <div class="jwj-gallery-slide active" data-index="0">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/wVLhZxPF8e-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/wVLhZxPF8e-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/wVLhZxPF8e-850.jpeg" alt="Stage coach statue in Santa Fe" width="850" height="637"></picture>
+            </div><div class="jwj-gallery-slide " data-index="1">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/Z13U8W4DG1-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/Z13U8W4DG1-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/Z13U8W4DG1-768.jpeg" alt="Statue in front of a church in Santa Fe" width="768" height="1024"></picture>
+            </div><div class="jwj-gallery-slide " data-index="2">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/cF4Fs5la_v-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/cF4Fs5la_v-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/cF4Fs5la_v-768.jpeg" alt="Sculpture of a Native American woman" width="768" height="1024"></picture>
+            </div><div class="jwj-gallery-slide " data-index="3">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/Ep9uz1crgp-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/Ep9uz1crgp-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/Ep9uz1crgp-768.jpeg" alt="Beautiful church in Santa Fe" width="768" height="1024"></picture>
+            </div><div class="jwj-gallery-slide " data-index="4">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/kvYVMwZTzL-768.avif 768w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/kvYVMwZTzL-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/kvYVMwZTzL-768.jpeg" alt="Santa Fe town square with empty benches" width="768" height="1024"></picture>
+            </div>
+        </div>
+        <button class="jwj-gallery-nav jwj-gallery-next" aria-label="Next image">&gt;</button>
+      </div>
+      <div class="jwj-gallery-thumbnails">
+        <div class="jwj-gallery-thumbnails-scroll">
+          <div class="jwj-gallery-thumbnail active" data-index="0">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/wVLhZxPF8e-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/wVLhZxPF8e-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/wVLhZxPF8e-150.jpeg" alt="Stage coach statue in Santa Fe" width="150" height="112"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="1">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/Z13U8W4DG1-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/Z13U8W4DG1-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/Z13U8W4DG1-150.jpeg" alt="Statue in front of a church in Santa Fe" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="2">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/cF4Fs5la_v-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/cF4Fs5la_v-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/cF4Fs5la_v-150.jpeg" alt="Sculpture of a Native American woman" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="3">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/Ep9uz1crgp-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/Ep9uz1crgp-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/Ep9uz1crgp-150.jpeg" alt="Beautiful church in Santa Fe" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="4">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/kvYVMwZTzL-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/kvYVMwZTzL-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/kvYVMwZTzL-150.jpeg" alt="Santa Fe town square with empty benches" width="150" height="200"></picture>
+            </div>
+        </div>
+      </div>
+    </div>
 <p>Once we decided we had walked around enough, we decided to head back home. On our way home we noticed a monument off the highway. It was the Mormon Batalion Monument!</p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/KtbF75OfqC-1920.avif 1920w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/KtbF75OfqC-1920.webp 1920w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/KtbF75OfqC-1920.jpeg" alt="" width="1920" height="2560"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/31E-okrA1r-1920.avif 1920w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/31E-okrA1r-1920.webp 1920w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/31E-okrA1r-1920.jpeg" alt="" width="1920" height="2560"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/pG3TcVjtaH-1920.avif 1920w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/pG3TcVjtaH-1920.webp 1920w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/pG3TcVjtaH-1920.jpeg" alt="" width="1920" height="2560"></picture></p>
-<p><picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/DylhyoUdB5-2048.avif 2048w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/DylhyoUdB5-2048.webp 2048w"><img loading="lazy" decoding="async" src="/blog/episode-2-new-mexico/DylhyoUdB5-2048.jpeg" alt="" width="2048" height="1536"></picture></p>
+<div class="jwj-gallery" id="mormon-battalion-monument-gallery">
+      <div class="jwj-gallery-main">
+        <button class="jwj-gallery-nav jwj-gallery-prev" aria-label="Previous image">&lt;</button>
+        <div class="jwj-gallery-viewer">
+          <div class="jwj-gallery-slide active" data-index="0">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/KtbF75OfqC-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/KtbF75OfqC-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/KtbF75OfqC-850.jpeg" alt="Mormon Battalion Monument off the highway" width="850" height="1133"></picture>
+            </div><div class="jwj-gallery-slide " data-index="1">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/31E-okrA1r-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/31E-okrA1r-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/31E-okrA1r-850.jpeg" alt="Close-up of the Mormon Battalion Monument plaque" width="850" height="1133"></picture>
+            </div><div class="jwj-gallery-slide " data-index="2">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/pG3TcVjtaH-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/pG3TcVjtaH-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/pG3TcVjtaH-850.jpeg" alt="Brent and Tayler taking a selfie in front of the Mormon Battalion Monument" width="850" height="1133"></picture>
+            </div><div class="jwj-gallery-slide " data-index="3">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/DylhyoUdB5-850.avif 850w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/DylhyoUdB5-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/DylhyoUdB5-850.jpeg" alt="Brent and Tayler taking a selfie with the wide open prairie near the Mormon Battalion Monument in the background" width="850" height="637"></picture>
+            </div>
+        </div>
+        <button class="jwj-gallery-nav jwj-gallery-next" aria-label="Next image">&gt;</button>
+      </div>
+      <div class="jwj-gallery-thumbnails">
+        <div class="jwj-gallery-thumbnails-scroll">
+          <div class="jwj-gallery-thumbnail active" data-index="0">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/KtbF75OfqC-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/KtbF75OfqC-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/KtbF75OfqC-150.jpeg" alt="Mormon Battalion Monument off the highway" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="1">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/31E-okrA1r-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/31E-okrA1r-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/31E-okrA1r-150.jpeg" alt="Close-up of the Mormon Battalion Monument plaque" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="2">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/pG3TcVjtaH-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/pG3TcVjtaH-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/pG3TcVjtaH-150.jpeg" alt="Brent and Tayler taking a selfie in front of the Mormon Battalion Monument" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="3">
+              <picture><source type="image/avif" srcset="/blog/episode-2-new-mexico/DylhyoUdB5-150.avif 150w"><source type="image/webp" srcset="/blog/episode-2-new-mexico/DylhyoUdB5-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-2-new-mexico/DylhyoUdB5-150.jpeg" alt="Brent and Tayler taking a selfie with the wide open prairie near the Mormon Battalion Monument in the background" width="150" height="112"></picture>
+            </div>
+        </div>
+      </div>
+    </div>
 <p>This monument was off the highway just randomly in the middle of nowhere! This won’t be our only time that we come across a Mormon Battalion Monument either!</p>
 
 <ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/episode-1-a-journey-begins-heading-west/">Episode 1: A Journey Begins, Heading West</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/episode-3-petroglyphs-national-historical-park/">Episode 3: Petroglyphs National Historical Park</a></li>
@@ -623,7 +906,8 @@ pre[class*="language-diff-"] {
 			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em></p>
 		</footer>
 
-		<!-- This page `/blog/episode-2-new-mexico/` was built on 2025-05-16T05:30:33.894Z -->
+		<!-- This page `/blog/episode-2-new-mexico/` was built on 2025-05-16T08:44:47.044Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
+		<script type="module" src="/js/image-gallery.js"></script>
 	</body>
 </html>

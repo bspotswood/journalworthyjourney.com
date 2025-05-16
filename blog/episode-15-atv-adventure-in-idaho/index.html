@@ -10,6 +10,7 @@
 		
 		
 		
+		
 		<style>/* This is an arbitrary CSS string added to the bundle */
 @import url("/fonts/roboto/index.css");
 @import url("/fonts/roboto-mono/index.css");
@@ -349,6 +350,144 @@ h2 {
   left: 0;
   top: 0;
 }
+.jwj-gallery {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.jwj-gallery-main {
+  position: relative;
+  margin-bottom: 1rem;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.jwj-gallery-viewer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: default;
+}
+
+.jwj-gallery-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.jwj-gallery-slide.active {
+  display: flex;
+}
+
+.jwj-gallery-slide picture,
+.jwj-gallery-slide img,
+.jwj-gallery-slide img[width][height] {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  pointer-events: none;
+}
+
+.jwj-gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.2s;
+}
+
+.jwj-gallery-nav:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.jwj-gallery-prev {
+  left: 10px;
+}
+
+.jwj-gallery-next {
+  right: 10px;
+}
+
+.jwj-gallery-thumbnails {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.jwj-gallery-thumbnails-scroll {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.jwj-gallery-thumbnail {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  border: 2px solid transparent;
+}
+
+.jwj-gallery-thumbnail:hover {
+  opacity: 0.8;
+}
+
+.jwj-gallery-thumbnail.active {
+  opacity: 1;
+  border-color: var(--color-primary, #0d6efd);
+}
+
+.jwj-gallery-thumbnail img,
+.jwj-gallery-thumbnail img[width][height] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+@media (max-width: 768px) {
+  .jwj-gallery-nav {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  
+  .jwj-gallery-thumbnail {
+    width: 60px;
+    height: 45px;
+  }
+}
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -556,7 +695,7 @@ pre[class*="language-diff-"] {
 	<li><a href="/tags/videos/" class="post-tag">videos</a></li>
 </ul>
 
-<iframe loading="lazy" allowfullscreen="true" title="ATV Adventure in Idaho | Episode 15 | Full Time RV Travels" width="600" height="600" src="https://www.youtube.com/embed/ixV8CqJkY9w?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<iframe allowfullscreen="true" title="ATV Adventure in Idaho | Episode 15 | Full Time RV Travels" width="600" height="600" src="https://www.youtube.com/embed/ixV8CqJkY9w?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 <ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/episode-14-redrock-rv-park/">Episode 14: RedRock RV Park</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/episode-16-grizzly-and-wolf-discovery-center/">Episode 16: Grizzly and Wolf Discovery Center</a></li>
 </ul>
@@ -568,7 +707,8 @@ pre[class*="language-diff-"] {
 			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em></p>
 		</footer>
 
-		<!-- This page `/blog/episode-15-atv-adventure-in-idaho/` was built on 2025-05-16T05:30:33.894Z -->
+		<!-- This page `/blog/episode-15-atv-adventure-in-idaho/` was built on 2025-05-16T08:44:47.044Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
+		<script type="module" src="/js/image-gallery.js"></script>
 	</body>
 </html>

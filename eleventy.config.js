@@ -5,6 +5,7 @@ import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 import pluginFilters from "./_config/filters.js";
+import galleryPlugin from "./_config/gallery.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -21,7 +22,8 @@ export default async function(eleventyConfig) {
 		.addPassthroughCopy({
 			"./public/": "/"
 		})
-		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
+		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
+		.addPassthroughCopy("./js/image-gallery.js");
 
 	eleventyConfig
 		.addPassthroughCopy({
@@ -109,6 +111,9 @@ export default async function(eleventyConfig) {
 
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
+	
+	// Add gallery plugin
+	eleventyConfig.addPlugin(galleryPlugin);
 
 	eleventyConfig.addPlugin(IdAttributePlugin, {
 		// by default we use Eleventy’s built-in `slugify` filter:

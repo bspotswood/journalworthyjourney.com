@@ -127,6 +127,12 @@ export default async function(eleventyConfig) {
 	// https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
 
 	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
+	// Add global environment variables to the template scope
+	eleventyConfig.addGlobalData("env", {
+		// Add any environment variables you want to expose to your templates
+		ELEVENTY_RUN_MODE: process.env.ELEVENTY_RUN_MODE,
+	});
 };
 
 export const config = {

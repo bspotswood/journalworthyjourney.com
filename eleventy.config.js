@@ -99,7 +99,7 @@ export default async function(eleventyConfig) {
 		htmlOptions: {
 			imgAttributes: {
 				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
-				loading: "lazy",
+				loading: "eager",
 				decoding: "async",
 			}
 		},

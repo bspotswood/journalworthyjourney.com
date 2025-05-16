@@ -22,7 +22,7 @@ tags:
   - season-1
   - videos
 ---
-<iframe loading="lazy" allowfullscreen="true" title="Snow in Albuquerque - Petroglyphs National Monument | Full Time RV Travel" width="600" height="600" src="https://www.youtube.com/embed/PaKkUD3ylAg?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<iframe  allowfullscreen="true" title="Snow in Albuquerque - Petroglyphs National Monument | Full Time RV Travel" width="600" height="600" src="https://www.youtube.com/embed/PaKkUD3ylAg?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 Petroglyphs around Albuquerque have been preserved and are accessible as a part of a park system. In this episode, we make a visit to a couple of locations for some short hikes and seeing the sights. We also tackle a couple RV projects. First, fixing my broken closet rod and then fixing trim that was falling off our walls!
 

@@ -21,7 +21,7 @@ tags:
   - season-1
   - videos
 ---
-<iframe loading="lazy" allowfullscreen="true" title="Moving on to ARIZONA!  Verde Ranch RV Resort, Grand Canyon, Medical Treatment in Phoenix, and More" width="600" height="600" src="https://www.youtube.com/embed/gg37Pp9ECj8?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<iframe  allowfullscreen="true" title="Moving on to ARIZONA!  Verde Ranch RV Resort, Grand Canyon, Medical Treatment in Phoenix, and More" width="600" height="600" src="https://www.youtube.com/embed/gg37Pp9ECj8?feature=oembed&amp;color=red&amp;rel=1&amp;controls=1&amp;fs=1&amp;iv_load_policy=0&amp;autoplay=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;playsinline=1" frameborder="0" allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 Heading on from New Mexico, in this video we move to the incredible Verde Ranch RV Resort. This is a great location between Phoenix and Flagstaff. This allowed us to seek treatment for Tayler’s ongoing pain, getting some answers and a path toward healing by visiting doctors in Phoenix.
 

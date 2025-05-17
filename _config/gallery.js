@@ -9,15 +9,16 @@
  *
  * @shortcodeParam {string} [galleryId="image-gallery"] - Optional ID for the gallery container element.
  * @shortcodeParam {number} [width=850] - Width in pixels for the main viewer images.
+ * @shortcodeParam {boolean} [continuousFlow=false] - Whether to show images in a continuous flow layout.
  * 
  * @example
- * {% gallery "my-custom-gallery", 1200 %}
+ * {% gallery "my-custom-gallery", 1200, true %}
  *   <img src="image1.jpg" alt="First image">
  *   <img src="image2.jpg" alt="Second image">
  * {% endgallery %}
  */
 export default function(eleventyConfig) {
-  eleventyConfig.addPairedShortcode("gallery", function(content, galleryId = 'image-gallery', width = 850) {
+  eleventyConfig.addPairedShortcode("gallery", function(content, galleryId = 'image-gallery', width = 850, continuousFlow = false) {
     // Extract image src and alt from content
     const imgRegex = /<img\s+[^>]*?src=["']([^"']+)["'][^>]*?alt=["']([^"']*)["'][^>]*?>/g;
     const images = [];
@@ -31,7 +32,7 @@ export default function(eleventyConfig) {
     }
     
     // Build the gallery HTML
-    const galleryHtml = `<div class="jwj-gallery" id="${galleryId}">
+    const galleryHtml = `<div class="jwj-gallery ${continuousFlow ? 'jwj-gallery-continuous' : ''}" id="${galleryId}" data-continuous-flow="${continuousFlow}">
       <div class="jwj-gallery-main">
         <button class="jwj-gallery-nav jwj-gallery-prev" aria-label="Previous image">&lt;</button>
         <div class="jwj-gallery-viewer">

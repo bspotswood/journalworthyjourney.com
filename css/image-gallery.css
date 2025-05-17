@@ -12,7 +12,7 @@
   margin-bottom: 1rem;
   width: 100%;
   aspect-ratio: 16/9;
-  background-color: #000;
+  /* background-color: #000; */
   border-radius: 4px;
   overflow: hidden;
 }
@@ -22,6 +22,13 @@
   height: 100%;
   position: relative;
   cursor: default;
+}
+
+/* Continuous flow mode - Base styles */
+.jwj-gallery-continuous .jwj-gallery-viewer {
+  display: flex;
+  overflow: visible;
+  gap: .3rem;
 }
 
 .jwj-gallery-slide {
@@ -35,8 +42,33 @@
   justify-content: center;
 }
 
+.jwj-gallery * {
+  transition: margin-left 0.4s, filter 0.6s;
+  will-change: margin, filter;
+}
+
+/* Continuous flow mode - Slide styles */
+.jwj-gallery-continuous .jwj-gallery-slide {
+  position: relative;
+  display: flex;
+  flex: 0 0 100%;
+  flex-basis: fit-content;
+}
+
+.jwj-gallery-slide {
+  filter: blur(3px) saturate(.3);
+}
+
 .jwj-gallery-slide.active {
   display: flex;
+  filter: unset;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .jwj-gallery * {
+    transition: none;
+  }
 }
 
 .jwj-gallery-slide picture,

@@ -59,7 +59,7 @@ This episode we go to the first 2 on the list- Santa Fe and Pecos National Histo
 
 With it’s easy, across the highway, access to hikes next to the Sandia Mountains we tried to take advantage as many times as my rib pains would allow! While I was still in Dallas, Brent was able to scope out some of these trails ahead of time! What pretty, long range views we were able to see! It was a nice change to see mountains…. we DEFINITELY weren’t in Texas anymore!
 
-{% gallery "sandia-mountains-gallery" %}
+{% gallery "sandia-mountains-gallery", 850, true %}
 <img src="IMG_20200410_181653-1024x768-8L9rOQSXlGpn.jpg" alt="Tayler standing on a rocky trail in the Sandia Mountains">
 <img src="IMG_20200410_181709-1024x768-01Ha06dOampF.jpg" alt="Brent standing on a rocky trail in the Sandia Mountains">
 <img src="IMG_20200410_182240-1024x768-2w1FwXz4M8vY.jpg" alt="A view from the Sandia Mountains looking down at the wide open valley below">

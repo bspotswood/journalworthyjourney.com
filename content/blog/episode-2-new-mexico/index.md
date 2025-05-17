@@ -39,7 +39,7 @@ After a week of physical therapy, and medications to help with the pain, the doc
 
 For our month stay in the Albuquerque area, we stayed at the Albuquerque North/Bernalillo KOA Journey. Originally I thought we would be in a long, pull thru site on the left side of the park but it seems they don’t like to use those sites for the lengthier stays. Our site, P04, was a bit more SNUG than we anticipated, and we ended up barely fitting the truck and the rig in the allotted spot but we made it work! Even though we were a little cramped it was a decent campground. The outdoor decor was cute but most of the amenities were closed with Covid-19.
 
-{% gallery "albuquerque-gallery" %}
+{% gallery %}
 <img src="Screenshot-2022-07-26-15.28.03-Md49WMWI2pMi.png" alt="Cactus and wagon wheel sculptures at the KOA campground">
 <img src="Screenshot-2022-07-26-15.28.37-o0YqlnULlpSS.png" alt="Carved wood bear statues holding the KOA sign">
 <img src="Screenshot-2022-07-26-15.29.23-mdNaMAxh8k2s.png" alt="The KOA check-in office">
@@ -59,7 +59,7 @@ This episode we go to the first 2 on the list- Santa Fe and Pecos National Histo
 
 With it’s easy, across the highway, access to hikes next to the Sandia Mountains we tried to take advantage as many times as my rib pains would allow! While I was still in Dallas, Brent was able to scope out some of these trails ahead of time! What pretty, long range views we were able to see! It was a nice change to see mountains…. we DEFINITELY weren’t in Texas anymore!
 
-{% gallery "sandia-mountains-gallery", 850, true %}
+{% gallery {continuousFlow: true} %}
 <img src="IMG_20200410_181653-1024x768-8L9rOQSXlGpn.jpg" alt="Tayler standing on a rocky trail in the Sandia Mountains">
 <img src="IMG_20200410_181709-1024x768-01Ha06dOampF.jpg" alt="Brent standing on a rocky trail in the Sandia Mountains">
 <img src="IMG_20200410_182240-1024x768-2w1FwXz4M8vY.jpg" alt="A view from the Sandia Mountains looking down at the wide open valley below">
@@ -73,7 +73,7 @@ With it’s easy, across the highway, access to hikes next to the Sandia Mountai
 
 On our first weekend there we decided to head north to take a hike through Pecos National Historical Park and then drive to downtown Santa Fe.  At Pecos, we decided to hike a couple miles at the Ancestral Sites Trail that weaves around some ancestral sites of the Pecos Pueblo, including a mission church.  Surrounded by beautiful views of the Sangre de Cristo mountains, this hike was quite peaceful and uninhabited .  With most national parks, or rather parks in general,  closed due to covid 19 restrictions, it was nice this historical park was open for us to enjoy its’ beauty.
 
-{% gallery "pecos-historical-park-gallery" %}
+{% gallery %}
 <img src="IMG_20200411_100935-1024x768-WJ6pu006qj9K.jpg" alt="Brent and Tayler take a selfie in front of Pecos National Historical Park sign">
 <img src="IMG_20200411_102820-768x1024-eLe5HqGCgzRE.jpg" alt="Historic ruins at Pecos">
 <img src="IMG_20200411_103119_1-1024x768-x5WbUkh5gcql.jpg" alt="Brent and Tayler take a selfie in Pecos">
@@ -86,7 +86,7 @@ On our first weekend there we decided to head north to take a hike through Pecos
 
  After our walk, we thought we would go see what Santa Fe had to offer…. but sadly covid had turned it to quite the ghost town.  What has been known as a lively city, full of culture and great shops, had been deserted.  With nothing open, we didn’t end up staying for very long.  All we were able to do was walk around the empty town square, see beautiful churches and window shop all the closed stores that had beautiful carvings and sculptures outside.  We look forward to eventually going back again to get the true Santa Fe experience, but we will have to settle on just our “peek” at it for now!
 
-{% gallery "santa-fe-gallery" %}
+{% gallery %}
 <img src="IMG_20200411_115814-1024x768-Cm7GvJ4f3Jgd.jpg" alt="Stage coach statue in Santa Fe">
 <img src="IMG_20200411_121404-768x1024-4JLj1CPU3wH6.jpg" alt="Statue in front of a church in Santa Fe">
 <img src="IMG_20200411_121421-768x1024-aWZq0zCeCA2B.jpg" alt="Sculpture of a Native American woman">
@@ -96,7 +96,7 @@ On our first weekend there we decided to head north to take a hike through Pecos
 
 Once we decided we had walked around enough, we decided to head back home. On our way home we noticed a monument off the highway. It was the Mormon Batalion Monument!
 
-{% gallery "mormon-battalion-monument-gallery" %}
+{% gallery %}
 <img src="IMG_20200411_134820-scaled-r487onWB0A73.jpg" alt="Mormon Battalion Monument off the highway">
 <img src="IMG_20200411_135042-scaled-NfX4LrinNG97.jpg" alt="Close-up of the Mormon Battalion Monument plaque">
 <img src="IMG_20200411_135318-scaled-05Ot7WpV5g89.jpg" alt="Brent and Tayler taking a selfie in front of the Mormon Battalion Monument">

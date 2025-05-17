@@ -34,7 +34,7 @@ This is where our traveling journey begins! With Brent working a job remote for 
   <li>Bought our 41' home on wheels—a Montana 3813MS — CHECK!</li>
 </ul>
 
-{% gallery %}
+{% gallery {continuousFlow: true} %}
 <img src="signing-house-sales-constract.jpg" alt="Tayler and Brent signing the house sales contract" width="250">
 <img src="trading-in-nissan-titan-for-new-ford-f350.jpg" alt="Brent trading in his Nissan Titan for a new Ford F350" width="250">
 <img src="picking-up-our-new-home-keystone-montana-3813ms.jpg" alt="Picking up our new home Keystone Montana 3813MS" width="250">
@@ -62,19 +62,15 @@ They didn’t have the largest RV spots but they were gravel and it was big enou
 
 With our time in Dallas coming to a close, we had one last big thing we wanted to do before we hit the road.  It was time to go to SPAIN to see my little sister, Andie, play pro volleyball in person! She had been playing pro for the past 3 years but we weren’t able to go see her play in person until now!  Our week in Spain was fantastic exploring sites in Barcelona, Madrid and Granada!  From the tapas and sangria to the detailed cathedrals and museums, it was such a fun, incredible experience and we can’t wait to go visit again in the future!  (Future blog on Spain to come later but here are a few pictures to tease!)
 
-<img src="selfie-at-the-Cathedral-of-the-Holy-Cross-and-Saint-Eulalia.jpg" alt="Selfie at the Cathedral of the Holy Cross and Saint Eulalia" width="200">
-
-<img src="tayler-and-andie-meeting-after-volleyball-match-in-spain.jpg" alt="Tayler and Andie meeting after volleyball match in Spain" width="200">
-
-<img src="sisters-at-la-sagrada-familia.jpg" alt="Sisters at La Sagrada Familia" width="200">
-
-<img src="selfie-with-alhambra-in-the-background.jpg" alt="Selfie with Alhambra in the background" width="200">
-
-<img src="selfie-at-royal-palace-of-madrid.jpg" alt="Selfie at Royal Palace of Madrid" width="200">
-
-<img src="andie-playing-in-volleyball-match.jpg" alt="Andie playing in volleyball match" width="200">
-
-<img src="reflecting-pool-in-alhambra.jpg" alt="Reflecting pool in Alhambra" width="200">
+{% gallery {id: "spain-gallery", continuousFlow: true} %}
+  <img src="selfie-at-the-Cathedral-of-the-Holy-Cross-and-Saint-Eulalia.jpg" alt="Selfie at the Cathedral of the Holy Cross and Saint Eulalia" width="200">
+  <img src="tayler-and-andie-meeting-after-volleyball-match-in-spain.jpg" alt="Tayler and Andie meeting after volleyball match in Spain" width="200">
+  <img src="sisters-at-la-sagrada-familia.jpg" alt="Sisters at La Sagrada Familia" width="200">
+  <img src="selfie-with-alhambra-in-the-background.jpg" alt="Selfie with Alhambra in the background" width="200">
+  <img src="selfie-at-royal-palace-of-madrid.jpg" alt="Selfie at Royal Palace of Madrid" width="200">
+  <img src="andie-playing-in-volleyball-match.jpg" alt="Andie playing in volleyball match" width="200">
+  <img src="reflecting-pool-in-alhambra.jpg" alt="Reflecting pool in Alhambra" width="200">
+{% endgallery %}
 
 ## Abilene, TX (March 15-March 28 2020)
 

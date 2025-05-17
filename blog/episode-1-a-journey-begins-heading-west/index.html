@@ -355,12 +355,16 @@ h2 {
   width: 100%;
 }
 
+.jwj-gallery:focus, .jwj-gallery:focus-within {
+  outline: none; /* Remove default outline */
+}
+
 .jwj-gallery-main {
   position: relative;
   margin-bottom: 1rem;
   width: 100%;
   aspect-ratio: 16/9;
-  background-color: #000;
+  /* background-color: #000; */
   border-radius: 4px;
   overflow: hidden;
 }
@@ -370,6 +374,13 @@ h2 {
   height: 100%;
   position: relative;
   cursor: default;
+}
+
+/* Continuous flow mode - Base styles */
+.jwj-gallery-continuous .jwj-gallery-viewer {
+  display: flex;
+  overflow: visible;
+  gap: .3rem;
 }
 
 .jwj-gallery-slide {
@@ -383,8 +394,33 @@ h2 {
   justify-content: center;
 }
 
+.jwj-gallery * {
+  transition: margin-left 0.4s, filter 0.6s;
+  will-change: margin, filter;
+}
+
+/* Continuous flow mode - Slide styles */
+.jwj-gallery-continuous .jwj-gallery-slide {
+  position: relative;
+  display: flex;
+  flex: 0 0 100%;
+  flex-basis: fit-content;
+}
+
+.jwj-gallery-slide {
+  filter: blur(3px) saturate(.3);
+}
+
 .jwj-gallery-slide.active {
   display: flex;
+  filter: unset;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .jwj-gallery * {
+    transition: none;
+  }
 }
 
 .jwj-gallery-slide picture,
@@ -704,7 +740,7 @@ pre[class*="language-diff-"] {
   <li>Bought a new Ford F350 Dually truck — CHECK!</li>
   <li>Bought our 41' home on wheels—a Montana 3813MS — CHECK!</li>
 </ul>
-<div class="jwj-gallery" id="image-gallery">
+<div class="jwj-gallery jwj-gallery-continuous" id="image-gallery1" data-continuous-flow="true">
       <div class="jwj-gallery-main">
         <button class="jwj-gallery-nav jwj-gallery-prev" aria-label="Previous image">&lt;</button>
         <div class="jwj-gallery-viewer">
@@ -741,13 +777,48 @@ pre[class*="language-diff-"] {
 <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/0GPf1QMNUW-600.avif 600w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/0GPf1QMNUW-600.webp 600w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/0GPf1QMNUW-600.jpeg" alt="Chicken coops at Lakeland RV Ranch" width="600" height="360"></picture>
 <h2 id="spain-january-23-february-3-2020">Spain (January 23-February 3 2020)</h2>
 <p>With our time in Dallas coming to a close, we had one last big thing we wanted to do before we hit the road.  It was time to go to SPAIN to see my little sister, Andie, play pro volleyball in person! She had been playing pro for the past 3 years but we weren’t able to go see her play in person until now!  Our week in Spain was fantastic exploring sites in Barcelona, Madrid and Granada!  From the tapas and sangria to the detailed cathedrals and museums, it was such a fun, incredible experience and we can’t wait to go visit again in the future!  (Future blog on Spain to come later but here are a few pictures to tease!)</p>
-<picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/sVMmVNDMGp-200.avif 200w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/sVMmVNDMGp-200.webp 200w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/sVMmVNDMGp-200.jpeg" alt="Selfie at the Cathedral of the Holy Cross and Saint Eulalia" width="200" height="266"></picture>
-<picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/JKWt_l605z-200.avif 200w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/JKWt_l605z-200.webp 200w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/JKWt_l605z-200.jpeg" alt="Tayler and Andie meeting after volleyball match in Spain" width="200" height="266"></picture>
-<picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/V2iuV4CCQW-200.avif 200w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/V2iuV4CCQW-200.webp 200w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/V2iuV4CCQW-200.jpeg" alt="Sisters at La Sagrada Familia" width="200" height="266"></picture>
-<picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/0lRtodFu7h-200.avif 200w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/0lRtodFu7h-200.webp 200w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/0lRtodFu7h-200.jpeg" alt="Selfie with Alhambra in the background" width="200" height="150"></picture>
-<picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/OQJFM17nOq-200.avif 200w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/OQJFM17nOq-200.webp 200w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/OQJFM17nOq-200.jpeg" alt="Selfie at Royal Palace of Madrid" width="200" height="266"></picture>
-<picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/YqHaZR6A5f-200.avif 200w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/YqHaZR6A5f-200.webp 200w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/YqHaZR6A5f-200.jpeg" alt="Andie playing in volleyball match" width="200" height="266"></picture>
-<picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/27sFJvyVZz-200.avif 200w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/27sFJvyVZz-200.webp 200w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/27sFJvyVZz-200.jpeg" alt="Reflecting pool in Alhambra" width="200" height="266"></picture>
+<div class="jwj-gallery jwj-gallery-continuous" id="spain-gallery" data-continuous-flow="true">
+      <div class="jwj-gallery-main">
+        <button class="jwj-gallery-nav jwj-gallery-prev" aria-label="Previous image">&lt;</button>
+        <div class="jwj-gallery-viewer">
+          <div class="jwj-gallery-slide active" data-index="0">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/sVMmVNDMGp-768.avif 768w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/sVMmVNDMGp-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/sVMmVNDMGp-768.jpeg" alt="Selfie at the Cathedral of the Holy Cross and Saint Eulalia" width="768" height="1024"></picture>
+            </div><div class="jwj-gallery-slide " data-index="1">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/JKWt_l605z-768.avif 768w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/JKWt_l605z-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/JKWt_l605z-768.jpeg" alt="Tayler and Andie meeting after volleyball match in Spain" width="768" height="1024"></picture>
+            </div><div class="jwj-gallery-slide " data-index="2">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/V2iuV4CCQW-768.avif 768w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/V2iuV4CCQW-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/V2iuV4CCQW-768.jpeg" alt="Sisters at La Sagrada Familia" width="768" height="1024"></picture>
+            </div><div class="jwj-gallery-slide " data-index="3">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/0lRtodFu7h-850.avif 850w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/0lRtodFu7h-850.webp 850w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/0lRtodFu7h-850.jpeg" alt="Selfie with Alhambra in the background" width="850" height="637"></picture>
+            </div><div class="jwj-gallery-slide " data-index="4">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/OQJFM17nOq-768.avif 768w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/OQJFM17nOq-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/OQJFM17nOq-768.jpeg" alt="Selfie at Royal Palace of Madrid" width="768" height="1024"></picture>
+            </div><div class="jwj-gallery-slide " data-index="5">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/YqHaZR6A5f-768.avif 768w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/YqHaZR6A5f-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/YqHaZR6A5f-768.jpeg" alt="Andie playing in volleyball match" width="768" height="1024"></picture>
+            </div><div class="jwj-gallery-slide " data-index="6">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/27sFJvyVZz-768.avif 768w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/27sFJvyVZz-768.webp 768w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/27sFJvyVZz-768.jpeg" alt="Reflecting pool in Alhambra" width="768" height="1024"></picture>
+            </div>
+        </div>
+        <button class="jwj-gallery-nav jwj-gallery-next" aria-label="Next image">&gt;</button>
+      </div>
+      <div class="jwj-gallery-thumbnails">
+        <div class="jwj-gallery-thumbnails-scroll">
+          <div class="jwj-gallery-thumbnail active" data-index="0">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/sVMmVNDMGp-150.avif 150w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/sVMmVNDMGp-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/sVMmVNDMGp-150.jpeg" alt="Selfie at the Cathedral of the Holy Cross and Saint Eulalia" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="1">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/JKWt_l605z-150.avif 150w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/JKWt_l605z-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/JKWt_l605z-150.jpeg" alt="Tayler and Andie meeting after volleyball match in Spain" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="2">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/V2iuV4CCQW-150.avif 150w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/V2iuV4CCQW-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/V2iuV4CCQW-150.jpeg" alt="Sisters at La Sagrada Familia" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="3">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/0lRtodFu7h-150.avif 150w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/0lRtodFu7h-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/0lRtodFu7h-150.jpeg" alt="Selfie with Alhambra in the background" width="150" height="112"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="4">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/OQJFM17nOq-150.avif 150w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/OQJFM17nOq-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/OQJFM17nOq-150.jpeg" alt="Selfie at Royal Palace of Madrid" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="5">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/YqHaZR6A5f-150.avif 150w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/YqHaZR6A5f-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/YqHaZR6A5f-150.jpeg" alt="Andie playing in volleyball match" width="150" height="200"></picture>
+            </div><div class="jwj-gallery-thumbnail " data-index="6">
+              <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/27sFJvyVZz-150.avif 150w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/27sFJvyVZz-150.webp 150w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/27sFJvyVZz-150.jpeg" alt="Reflecting pool in Alhambra" width="150" height="200"></picture>
+            </div>
+        </div>
+      </div>
+    </div>
 <h2 id="abilene-tx-march-15-march-28-2020">Abilene, TX (March 15-March 28 2020)</h2>
 <p>RV Park: <em>Whistlestop RV</em></p>
 <p>Once back in Texas, it was time to get packed up and hit the road to Abilene.  Our goal was to leave Texas before Spring so we could avoid all the rain, hail and tornados.  However, we didn’t want to be too far west as Dawn’s wedding (my old roomie) was approaching in San Antonio and we wanted to be able to drive there. So we settled on Abilene, TX.  We had been looking forward to hitting the road, but our adventure definitely started off a bit rocky.  Our day of departure was overcast and a little rainy, but the drive ended up being pretty smooth… that is until a wreck caused a freeway shutdown about 20 miles outside of the city.  After we took a detour on some backroads we eventually made it to our new RV Park.  What a great little park right off the highway that had very large and spaced-out sites.  There were, however, a few common areas that were closed though due to the pandemic. Coincidentally, our first week traveling just so happened to be THE first week of Covid-19 lockdowns across the country. So many common areas at the rv park were closed and restaurants around us started closing along with store shelves becoming bare from panic buyers.  Our adventure was off to a great start.</p>
@@ -770,7 +841,7 @@ pre[class*="language-diff-"] {
 			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em></p>
 		</footer>
 
-		<!-- This page `/blog/episode-1-a-journey-begins-heading-west/` was built on 2025-05-16T08:44:47.043Z -->
+		<!-- This page `/blog/episode-1-a-journey-begins-heading-west/` was built on 2025-05-17T05:51:51.624Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
 		<script type="module" src="/js/image-gallery.js"></script>
 	</body>

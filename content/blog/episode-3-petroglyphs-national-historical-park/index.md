@@ -1,23 +1,7 @@
 ---
 title: 'Episode 3: Petroglyphs National Historical Park'
-authors:
-  - name: JWJ
-    url: https://journalworthyjourney.com
-    avatarUrl: >-
-      https://secure.gravatar.com/avatar/88e73f40bb3b4a69c7b8f873fa45104dd6dcbac157ec972498c06986de5efbaa?s=96&d=mm&r=g
 date: 2022-05-12T04:40:22.000Z
-metadata:
-  featuredImage: >-
-    https://journalworthyjourney.com/wp-content/uploads/2022/05/S01E03-Albuquerque-Part-2-Thumbnail_4.1.1.png
-  media:
-    featuredImage: S01E03-Albuquerque-Part-2-Thum-OBQP7KH0JPN0.png
-  categories:
-    - Season 1
-    - Videos
-  uuid: 11ty/import::wordpress::https://journalworthyjourney.com/?p=62
-  type: wordpress
-  url: >-
-    https://journalworthyjourney.com/blog/episode-3-petroglyphs-national-historical-park/
+featuredImage: S01E03-Albuquerque-Part-2-Thum-OBQP7KH0JPN0.png
 tags:
   - season-1
   - videos

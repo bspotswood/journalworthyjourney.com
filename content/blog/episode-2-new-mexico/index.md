@@ -1,20 +1,7 @@
 ---
 title: 'Episode 2: New Mexico'
-authors:
-  - name: JWJ
-    url: https://journalworthyjourney.com
 date: 2022-05-12T04:31:44.000Z
-metadata:
-  featuredImage: >-
-    https://journalworthyjourney.com/wp-content/uploads/2022/05/S01E02-Thumbnail_2.1.1.png
-  media:
-    featuredImage: S01E02-Thumbnail_2.1.1-iniwFUa8O2F3.png
-  categories:
-    - Season 1
-    - Videos
-  uuid: 11ty/import::wordpress::https://journalworthyjourney.com/?p=59
-  type: wordpress
-  url: https://journalworthyjourney.com/blog/episode-2-new-mexico/
+featuredImage: S01E02-Thumbnail_2.1.1-iniwFUa8O2F3.png
 tags:
   - season-1
   - videos

@@ -1,22 +1,7 @@
 ---
 title: 'Episode 9: Bryce Canyon'
-authors:
-  - name: JWJ
-    url: https://journalworthyjourney.com
-    avatarUrl: >-
-      https://secure.gravatar.com/avatar/88e73f40bb3b4a69c7b8f873fa45104dd6dcbac157ec972498c06986de5efbaa?s=96&d=mm&r=g
 date: 2022-05-12T05:44:49.000Z
-metadata:
-  featuredImage: >-
-    https://journalworthyjourney.com/wp-content/uploads/2022/05/S01E09-Bryce-Thumbnail_5.1.1.jpg
-  media:
-    featuredImage: S01E09-Bryce-Thumbnail_5.1.1-1GTCmfPcThnO.jpg
-  categories:
-    - Season 1
-    - Videos
-  uuid: 11ty/import::wordpress::https://journalworthyjourney.com/?p=75
-  type: wordpress
-  url: https://journalworthyjourney.com/blog/episode-9-bryce-canyon/
+featuredImage: S01E09-Bryce-Thumbnail_5.1.1-1GTCmfPcThnO.jpg
 tags:
   - season-1
   - videos

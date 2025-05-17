@@ -1,22 +1,7 @@
 ---
 title: 'Episode 12: Salt Flats and Reservoirs'
-authors:
-  - name: JWJ
-    url: https://journalworthyjourney.com
-    avatarUrl: >-
-      https://secure.gravatar.com/avatar/88e73f40bb3b4a69c7b8f873fa45104dd6dcbac157ec972498c06986de5efbaa?s=96&d=mm&r=g
 date: 2022-05-12T06:13:12.000Z
-metadata:
-  featuredImage: >-
-    https://journalworthyjourney.com/wp-content/uploads/2022/05/S01E12-Thumbnail_5.1.1.jpg
-  media:
-    featuredImage: S01E12-Thumbnail_5.1.1-6yiO0zC9kFja.jpg
-  categories:
-    - Season 1
-    - Videos
-  uuid: 11ty/import::wordpress::https://journalworthyjourney.com/?p=82
-  type: wordpress
-  url: https://journalworthyjourney.com/blog/episode-12-salt-flats-and-reservoirs/
+featuredImage: S01E12-Thumbnail_5.1.1-6yiO0zC9kFja.jpg
 tags:
   - season-1
   - videos

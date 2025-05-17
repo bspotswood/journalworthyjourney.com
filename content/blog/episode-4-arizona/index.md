@@ -1,22 +1,7 @@
 ---
 title: 'Episode 4: Arizona'
-authors:
-  - name: JWJ
-    url: https://journalworthyjourney.com
-    avatarUrl: >-
-      https://secure.gravatar.com/avatar/88e73f40bb3b4a69c7b8f873fa45104dd6dcbac157ec972498c06986de5efbaa?s=96&d=mm&r=g
 date: 2022-05-12T04:46:56.000Z
-metadata:
-  featuredImage: >-
-    https://journalworthyjourney.com/wp-content/uploads/2022/05/S01E04-Albuquerque-Part-2-Thumbnail-3_6.3.1.png
-  media:
-    featuredImage: S01E04-Albuquerque-Part-2-Thum-ME0Xjw78IsE0.png
-  categories:
-    - Season 1
-    - Videos
-  uuid: 11ty/import::wordpress::https://journalworthyjourney.com/?p=64
-  type: wordpress
-  url: https://journalworthyjourney.com/blog/episode-4-arizona/
+featuredImage: S01E04-Albuquerque-Part-2-Thum-ME0Xjw78IsE0.png
 tags:
   - season-1
   - videos

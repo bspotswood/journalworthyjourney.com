@@ -1,8 +1,31 @@
-<ol reversed class="postlist" style="--postlist-index: {{ (postslistCounter or postslist.length) + 1 }}">
+<div class="posts-grid">
 {%- for post in postslist | reverse %}
-	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
-	</li>
+    <div class="post-card{% if post.url == url %} post-card-active{% endif %}">
+        <div class="post-card-image">
+            {% if post.data.featuredImage %}
+                <a href="{{ post.url }}">
+                    <img src="/blog/{{ post.fileSlug }}/{{ post.data.featuredImage }}" alt="{{ post.data.title }}" loading="lazy" width="500">
+                </a>
+            {% endif %}
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                {%- for tag in post.data.tags | filterTagList %}
+                    {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+                    <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>
+                {%- endfor %}
+            </div>
+            <div class="post-card-title">
+                <a href="{{ post.url }}" class="post-card-link">{% if post.data.title %}{{ post.data.title }}{% else %}{{ post.url }}{% endif %}</a>
+            </div>
+            <div class="post-card-excerpt">
+                {{ post.data.excerpt | striptags | truncate(200, false, "…") }}
+            </div>
+            <a href="{{ post.url }}" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("MMMM D, yyyy") }}</time>
+        </div>
+    </div>
 {%- endfor %}
-</ol>
+</div>

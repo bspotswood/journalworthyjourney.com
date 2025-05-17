@@ -1,23 +1,7 @@
 ---
 title: 'Episode 17: Museum of the Rockies + She Drives the RV + Drone Testing'
-authors:
-  - name: JWJ
-    url: https://journalworthyjourney.com
-    avatarUrl: >-
-      https://secure.gravatar.com/avatar/88e73f40bb3b4a69c7b8f873fa45104dd6dcbac157ec972498c06986de5efbaa?s=96&d=mm&r=g
 date: 2022-08-02T04:11:04.000Z
-metadata:
-  featuredImage: >-
-    https://journalworthyjourney.com/wp-content/uploads/2022/08/IMG_20200703_122316-scaled.jpg
-  media:
-    featuredImage: IMG_20200703_122316-scaled-QUbEdt5QqWse.jpg
-  categories:
-    - Season 1
-    - Videos
-  uuid: 11ty/import::wordpress::https://journalworthyjourney.com/?p=259
-  type: wordpress
-  url: >-
-    https://journalworthyjourney.com/blog/episode-17-museum-of-the-rockies-she-drives-the-rv-drone-testing/
+featuredImage: IMG_20200703_122316-scaled-QUbEdt5QqWse.jpg
 tags:
   - season-1
   - videos

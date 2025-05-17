@@ -3,6 +3,7 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import markdownIt from "markdown-it";
 
 import pluginFilters from "./_config/filters.js";
 import galleryPlugin from "./_config/gallery.js";
@@ -138,6 +139,41 @@ export default async function(eleventyConfig) {
 		// Add any environment variables you want to expose to your templates
 		ELEVENTY_RUN_MODE: process.env.ELEVENTY_RUN_MODE,
 	});
+
+	// Enable exceprts
+	eleventyConfig.setFrontMatterParsingOptions({ excerpt: true });
+
+	// Setup excerpt processing
+	// Based on: https://tylersticka.com/journal/simple-eleventy-3-excerpts/
+  const md = markdownIt();
+	
+  // Create computed data per page
+  eleventyConfig.addGlobalData("eleventyComputed.excerpt", () => (data) => {
+    // If property is explicitly set, use that
+    if (data.excerpt) {
+      return data.excerpt;
+    }
+
+    // Grab raw page content
+    let content = data.page.rawInput;
+
+    // Quit if not a markdown file
+    if (!data.page.templateSyntax.includes('md')) {
+      return null;
+    }
+
+		content = md.render(content);
+
+    // Vanilla paragraphs ending in period, question or exclamation
+    const matches = content.match(/<p>(.+[\.\?\!])<\/p>/);
+
+    // If found, return content
+    if (matches) {
+      return matches[1];
+    }
+
+    return null;
+  });
 };
 
 export const config = {

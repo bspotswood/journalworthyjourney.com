@@ -1,21 +1,7 @@
 ---
 title: 'Episode 1: A Journey Begins, Heading West'
-authors:
-  - name: JWJ
-    url: https://journalworthyjourney.com
 date: 2022-05-12T03:37:45.000Z
-metadata:
-  featuredImage: >-
-    https://journalworthyjourney.com/wp-content/uploads/2022/05/IMG_20191104_152057-scaled.jpg
-  media:
-    featuredImage: IMG_20191104_152057-scaled-70FZfSJxmpmm.jpg
-  categories:
-    - Season 1
-    - Videos
-  uuid: 11ty/import::wordpress::https://journalworthyjourney.com/?p=55
-  type: wordpress
-  url: >-
-    https://journalworthyjourney.com/blog/episode-1-a-journey-begins-heading-west/
+featuredImage: picking-up-our-new-home-keystone-montana-3813ms.jpg
 tags:
   - season-1
   - videos
@@ -92,4 +78,4 @@ We also had a close call with a tornado, going past just 5 miles north of where 
 
 With as much pain as I was in, we made the difficult decision to have Brent drive me to meet my parents and I would head home and spend the foreseeable future back in Dallas to see my doctors to find out what was wrong.  Then once I healed or got better, I would rejoin him on the road.  After dropping me off, Brent headed back to Abilene where he would continue to stay to work and watch the rig and at week’s end would continue on to Albuquerque New Mexico.  
 
-The next day I had an emergency appointment with my primary care doctor who then sent me to an orthopedic pain doctor.  The doctor thought it was a pinched nerve in my back so he started me on some meds and I was referred to a physical therapist.  This therapy was quite painful… and months later I would find out that I in fact DID have a fractured rib bone, not a strained muscle, so therapy may have made things worse for me in the long run and we didn’t know it at the time.  With me still needing more time to heal, Brent continued on without me to New Mexico at that end of that week and I was to unexpectedly spend my birthday away from him at home.  With all the Covid shutdowns paired with my pain and lingering sickness, on top of not being able to spend the day with my husband, it was a very odd birthday.  The one exciting thing was that my sister got home safely from Spain and I was able to see her and spend some time with her before I rejoined Brent in New Mexico.
+The next day I had an emergency appointment with my primary care doctor who then sent me to an orthopedic pain doctor.  The doctor thought it was a pinched nerve in my back so he started me on some meds and I was referred to a physical therapist.  This therapy was quite painful… and months later I would find out that I in fact DID have a fractured rib bone, not a strained muscle, so therapy may have made things worse for me in the long run and we didn’t know it at the time.  With me still needing more time to heal, Brent continued on without me to New Mexico at that end of the week and I was to unexpectedly spend my birthday away from him at home.  With all the Covid shutdowns paired with my pain and lingering sickness, on top of not being able to spend the day with my husband, it was a very odd birthday.  The one exciting thing was that my sister got home safely from Spain and I was able to see her and spend some time with her before I rejoined Brent in New Mexico.

@@ -1,18 +1,6 @@
 ---
 title: 'Episode 7: Travel Day'
-authors:
-  - name: JWJ
-    url: https://journalworthyjourney.com
-    avatarUrl: >-
-      https://secure.gravatar.com/avatar/88e73f40bb3b4a69c7b8f873fa45104dd6dcbac157ec972498c06986de5efbaa?s=96&d=mm&r=g
 date: 2022-05-12T05:24:46.000Z
-metadata:
-  categories:
-    - Season 1
-    - Videos
-  uuid: 11ty/import::wordpress::https://journalworthyjourney.com/?p=71
-  type: wordpress
-  url: https://journalworthyjourney.com/blog/episode-7-travel-day/
 tags:
   - season-1
   - videos

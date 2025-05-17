@@ -299,13 +299,6 @@ header {
 }
 
 /* Tags */
-.post-tag {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	text-transform: capitalize;
-	font-style: italic;
-}
 .postlist-item > .post-tag {
 	align-self: center;
 }
@@ -350,6 +343,133 @@ h2 {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+/* Post Grid Layout */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  height: 100%;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.post-card-image {
+  height: 200px;
+  overflow: hidden;
+	display: grid;
+	align-content: center;
+}
+
+.post-card-image img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.post-card-image:hover img {
+  transform: scale(1.05);
+}
+
+.post-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.post-card-tags {
+  margin-bottom: 0.75rem;
+}
+
+.post-tag {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.post-tag:hover {
+  background-color: #e0e0e0;
+}
+
+.post-card-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.3;
+	font-weight: 900;
+}
+
+.post-card-title a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.post-card-title a:hover {
+  color: var(--text-color-link-active);
+}
+
+.post-card-excerpt {
+  margin-bottom: 1.5rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.read-more-link {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color-link-active);
+  font-size: 0.9rem;
+  margin-top: auto;
+  letter-spacing: 1px;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+.post-card-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.post-card-date {
+  display: block;
+}
+
+/* Archive link */
+.archive-link {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
 }
 .jwj-gallery {
   margin: 2rem 0;
@@ -557,76 +677,429 @@ h2 {
 <h1 id="tagged-videos">Tagged “videos”</h1>
 
 
-<ol reversed="" class="postlist" style="--postlist-index: 18">
-	<li class="postlist-item">
-		<a href="/blog/episode-17-museum-of-the-rockies-she-drives-the-rv-drone-testing/" class="postlist-link">Episode 17: Museum of the Rockies + She Drives the RV + Drone Testing</a>
-		<time class="postlist-date" datetime="2022-08-02">August 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-16-grizzly-and-wolf-discovery-center/" class="postlist-link">Episode 16: Grizzly and Wolf Discovery Center</a>
-		<time class="postlist-date" datetime="2022-07-29">July 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-15-atv-adventure-in-idaho/" class="postlist-link">Episode 15: ATV Adventure in Idaho</a>
-		<time class="postlist-date" datetime="2022-07-29">July 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-14-redrock-rv-park/" class="postlist-link">Episode 14: RedRock RV Park</a>
-		<time class="postlist-date" datetime="2022-07-29">July 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-13-the-5-things-youll-love-about-yellowstone/" class="postlist-link">Episode 13: The 5 Things You&amp;#8217;ll Love About Yellowstone</a>
-		<time class="postlist-date" datetime="2022-06-05">June 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-12-salt-flats-and-reservoirs/" class="postlist-link">Episode 12: Salt Flats and Reservoirs</a>
-		<time class="postlist-date" datetime="2022-05-12">May 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-11-the-gross-salt-lake/" class="postlist-link">Episode 11: The Gross Salt Lake</a>
-		<time class="postlist-date" datetime="2022-05-12">May 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-10-salt-lake-city/" class="postlist-link">Episode 10: Salt Lake City</a>
-		<time class="postlist-date" datetime="2022-05-12">May 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-9-bryce-canyon/" class="postlist-link">Episode 9: Bryce Canyon</a>
-		<time class="postlist-date" datetime="2022-05-12">May 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-8-zion-national-park/" class="postlist-link">Episode 8: Zion National Park</a>
-		<time class="postlist-date" datetime="2022-05-12">May 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-7-travel-day/" class="postlist-link">Episode 7: Travel Day</a>
-		<time class="postlist-date" datetime="2022-05-12">May 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-6-meteor-crater/" class="postlist-link">Episode 6: Meteor Crater</a>
-		<time class="postlist-date" datetime="2022-05-12">May 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-5-horseshoe-bend/" class="postlist-link">Episode 5: Horseshoe Bend</a>
-		<time class="postlist-date" datetime="2022-05-12">May 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-4-arizona/" class="postlist-link">Episode 4: Arizona</a>
-		<time class="postlist-date" datetime="2022-05-12">May 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-3-petroglyphs-national-historical-park/" class="postlist-link">Episode 3: Petroglyphs National Historical Park</a>
-		<time class="postlist-date" datetime="2022-05-12">May 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-2-new-mexico/" class="postlist-link">Episode 2: New Mexico</a>
-		<time class="postlist-date" datetime="2022-05-12">May 2022</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/episode-1-a-journey-begins-heading-west/" class="postlist-link">Episode 1: A Journey Begins, Heading West</a>
-		<time class="postlist-date" datetime="2022-05-12">May 2022</time>
-	</li>
-</ol>
+<div class="posts-grid">
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-17-museum-of-the-rockies-she-drives-the-rv-drone-testing/">
+                    <picture><source type="image/avif" srcset="/img/ph8kihMf_--500.avif 500w"><source type="image/webp" srcset="/img/ph8kihMf_--500.webp 500w"><img loading="lazy" decoding="async" src="/img/ph8kihMf_--500.jpeg" alt="Episode 17: Museum of the Rockies + She Drives the RV + Drone Testing" width="500" height="375"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-17-museum-of-the-rockies-she-drives-the-rv-drone-testing/" class="post-card-link">Episode 17: Museum of the Rockies + She Drives the RV + Drone Testing</a>
+            </div>
+            <div class="post-card-excerpt">
+                
+            </div>
+            <a href="/blog/episode-17-museum-of-the-rockies-she-drives-the-rv-drone-testing/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-08-02">August 8/2/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-16-grizzly-and-wolf-discovery-center/">
+                    <picture><source type="image/avif" srcset="/img/OH0NCb5RRa-500.avif 500w"><source type="image/webp" srcset="/img/OH0NCb5RRa-500.webp 500w"><img loading="lazy" decoding="async" src="/img/OH0NCb5RRa-500.jpeg" alt="Episode 16: Grizzly and Wolf Discovery Center" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-16-grizzly-and-wolf-discovery-center/" class="post-card-link">Episode 16: Grizzly and Wolf Discovery Center</a>
+            </div>
+            <div class="post-card-excerpt">
+                
+            </div>
+            <a href="/blog/episode-16-grizzly-and-wolf-discovery-center/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-07-29">July 7/29/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-15-atv-adventure-in-idaho/">
+                    <picture><source type="image/avif" srcset="/img/5BPuGrPsW9-500.avif 500w"><source type="image/webp" srcset="/img/5BPuGrPsW9-500.webp 500w"><img loading="lazy" decoding="async" src="/img/5BPuGrPsW9-500.jpeg" alt="Episode 15: ATV Adventure in Idaho" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-15-atv-adventure-in-idaho/" class="post-card-link">Episode 15: ATV Adventure in Idaho</a>
+            </div>
+            <div class="post-card-excerpt">
+                
+            </div>
+            <a href="/blog/episode-15-atv-adventure-in-idaho/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-07-29">July 7/29/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-14-redrock-rv-park/">
+                    <picture><source type="image/avif" srcset="/img/j_TOHe0q4n-500.avif 500w"><source type="image/webp" srcset="/img/j_TOHe0q4n-500.webp 500w"><img loading="lazy" decoding="async" src="/img/j_TOHe0q4n-500.jpeg" alt="Episode 14: RedRock RV Park" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-14-redrock-rv-park/" class="post-card-link">Episode 14: RedRock RV Park</a>
+            </div>
+            <div class="post-card-excerpt">
+                
+            </div>
+            <a href="/blog/episode-14-redrock-rv-park/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-07-29">July 7/29/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-13-the-5-things-youll-love-about-yellowstone/">
+                    <picture><source type="image/avif" srcset="/img/jg6yyZe5_i-500.avif 500w"><source type="image/webp" srcset="/img/jg6yyZe5_i-500.webp 500w"><img loading="lazy" decoding="async" src="/img/jg6yyZe5_i-500.jpeg" alt="Episode 13: The 5 Things You&amp;#8217;ll Love About Yellowstone" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-13-the-5-things-youll-love-about-yellowstone/" class="post-card-link">Episode 13: The 5 Things You&amp;#8217;ll Love About Yellowstone</a>
+            </div>
+            <div class="post-card-excerpt">
+                Yellowstone is the first of the national parks … in the world. We absolutely loved this park and think that you will too! Join us as we revisit this incredible place and talk about these big…
+            </div>
+            <a href="/blog/episode-13-the-5-things-youll-love-about-yellowstone/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-06-05">June 6/5/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-12-salt-flats-and-reservoirs/">
+                    <picture><source type="image/avif" srcset="/img/-dLSakl9EY-500.avif 500w"><source type="image/webp" srcset="/img/-dLSakl9EY-500.webp 500w"><img loading="lazy" decoding="async" src="/img/-dLSakl9EY-500.jpeg" alt="Episode 12: Salt Flats and Reservoirs" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-12-salt-flats-and-reservoirs/" class="post-card-link">Episode 12: Salt Flats and Reservoirs</a>
+            </div>
+            <div class="post-card-excerpt">
+                This is our last video from northern Utah before heading out and onward to Idaho. We recap some of the other great things to see and do, which definitely includes a number of reservoirs and the best…
+            </div>
+            <a href="/blog/episode-12-salt-flats-and-reservoirs/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-05-12">May 5/12/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-11-the-gross-salt-lake/">
+                    <picture><source type="image/avif" srcset="/img/6YZy97yDqK-500.avif 500w"><source type="image/webp" srcset="/img/6YZy97yDqK-500.webp 500w"><img loading="lazy" decoding="async" src="/img/6YZy97yDqK-500.jpeg" alt="Episode 11: The Gross Salt Lake" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-11-the-gross-salt-lake/" class="post-card-link">Episode 11: The Gross Salt Lake</a>
+            </div>
+            <div class="post-card-excerpt">
+                While in the northern Utah area, we took the opportunity to go try a swim in the Great Salt Lake. We were warned about the biting flies and general experience to expect. And so now we have decided to…
+            </div>
+            <a href="/blog/episode-11-the-gross-salt-lake/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-05-12">May 5/12/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-10-salt-lake-city/">
+                    <picture><source type="image/avif" srcset="/img/6nhCd1Fjj7-500.avif 500w"><source type="image/webp" srcset="/img/6nhCd1Fjj7-500.webp 500w"><img loading="lazy" decoding="async" src="/img/6nhCd1Fjj7-500.jpeg" alt="Episode 10: Salt Lake City" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-10-salt-lake-city/" class="post-card-link">Episode 10: Salt Lake City</a>
+            </div>
+            <div class="post-card-excerpt">
+                We moved on from St George in southern Utah to Aspen Grove RV Park in the city of Tremonton in the north. With a new location comes new opportunities to visit things. In this video, we go down town to…
+            </div>
+            <a href="/blog/episode-10-salt-lake-city/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-05-12">May 5/12/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-9-bryce-canyon/">
+                    <picture><source type="image/avif" srcset="/img/rOBC0I_Pq5-500.avif 500w"><source type="image/webp" srcset="/img/rOBC0I_Pq5-500.webp 500w"><img loading="lazy" decoding="async" src="/img/rOBC0I_Pq5-500.jpeg" alt="Episode 9: Bryce Canyon" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-9-bryce-canyon/" class="post-card-link">Episode 9: Bryce Canyon</a>
+            </div>
+            <div class="post-card-excerpt">
+                In this episode, we visit Bryce Canyon and take a hike. The canyon is filled with these rocky pillars called hoodoos. Bring your car or a good bike and enjoy touring around the park for a number of…
+            </div>
+            <a href="/blog/episode-9-bryce-canyon/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-05-12">May 5/12/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-8-zion-national-park/">
+                    <picture><source type="image/avif" srcset="/img/7duMkQqkjj-500.avif 500w"><source type="image/webp" srcset="/img/7duMkQqkjj-500.webp 500w"><img loading="lazy" decoding="async" src="/img/7duMkQqkjj-500.jpeg" alt="Episode 8: Zion National Park" width="500" height="280"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-8-zion-national-park/" class="post-card-link">Episode 8: Zion National Park</a>
+            </div>
+            <div class="post-card-excerpt">
+                Zion National Park is one of our favorite national parks. Soaring rock faces that go up hundreds of feet surround you as you travel down the roads or along the trails within the park. It has this…
+            </div>
+            <a href="/blog/episode-8-zion-national-park/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-05-12">May 5/12/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-7-travel-day/" class="post-card-link">Episode 7: Travel Day</a>
+            </div>
+            <div class="post-card-excerpt">
+                In this video, we bring you some of what it’s like when we travel with our 41 foot 5th wheel RV in our F350 dually truck! We head out from Arizona, moving on to Utah, catch a historic Space X launch,…
+            </div>
+            <a href="/blog/episode-7-travel-day/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-05-12">May 5/12/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-6-meteor-crater/">
+                    <picture><source type="image/avif" srcset="/img/ZmcUHu8_IO-500.avif 500w"><source type="image/webp" srcset="/img/ZmcUHu8_IO-500.webp 500w"><img loading="lazy" decoding="async" src="/img/ZmcUHu8_IO-500.jpeg" alt="Episode 6: Meteor Crater" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-6-meteor-crater/" class="post-card-link">Episode 6: Meteor Crater</a>
+            </div>
+            <div class="post-card-excerpt">
+                Meteor Crater is basically a giant divot that was punched into the earth by a meteor. This is unlike most other craters that you will encounter on earth, which are most likely to have been created by…
+            </div>
+            <a href="/blog/episode-6-meteor-crater/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-05-12">May 5/12/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-5-horseshoe-bend/">
+                    <picture><source type="image/avif" srcset="/img/0CSyJVIZS7-500.avif 500w"><source type="image/webp" srcset="/img/0CSyJVIZS7-500.webp 500w"><img loading="lazy" decoding="async" src="/img/0CSyJVIZS7-500.png" alt="Episode 5: Horseshoe Bend" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-5-horseshoe-bend/" class="post-card-link">Episode 5: Horseshoe Bend</a>
+            </div>
+            <div class="post-card-excerpt">
+                Horseshoe Bend is truly a must-see sight! It is a part of the Glen Canyon National Recreation Area near the border of Arizona and Utah. It was carved out by the Colorado River. Stepping up to the edge…
+            </div>
+            <a href="/blog/episode-5-horseshoe-bend/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-05-12">May 5/12/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-4-arizona/">
+                    <picture><source type="image/avif" srcset="/img/BkLI8rj0ys-500.avif 500w"><source type="image/webp" srcset="/img/BkLI8rj0ys-500.webp 500w"><img loading="lazy" decoding="async" src="/img/BkLI8rj0ys-500.png" alt="Episode 4: Arizona" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-4-arizona/" class="post-card-link">Episode 4: Arizona</a>
+            </div>
+            <div class="post-card-excerpt">
+                Heading on from New Mexico, in this video we move to the incredible Verde Ranch RV Resort. This is a great location between Phoenix and Flagstaff. This allowed us to seek treatment for Tayler’s…
+            </div>
+            <a href="/blog/episode-4-arizona/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-05-12">May 5/12/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-3-petroglyphs-national-historical-park/">
+                    <picture><source type="image/avif" srcset="/img/cGuysg4kFR-500.avif 500w"><source type="image/webp" srcset="/img/cGuysg4kFR-500.webp 500w"><img loading="lazy" decoding="async" src="/img/cGuysg4kFR-500.png" alt="Episode 3: Petroglyphs National Historical Park" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-3-petroglyphs-national-historical-park/" class="post-card-link">Episode 3: Petroglyphs National Historical Park</a>
+            </div>
+            <div class="post-card-excerpt">
+                Petroglyphs around Albuquerque have been preserved and are accessible as a part of a park system. In this episode, we make a visit to a couple of locations for some short hikes and seeing the sights.…
+            </div>
+            <a href="/blog/episode-3-petroglyphs-national-historical-park/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-05-12">May 5/12/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-2-new-mexico/">
+                    <picture><source type="image/avif" srcset="/img/VKcX1Yvfsr-500.avif 500w"><source type="image/webp" srcset="/img/VKcX1Yvfsr-500.webp 500w"><img loading="lazy" decoding="async" src="/img/VKcX1Yvfsr-500.png" alt="Episode 2: New Mexico" width="500" height="281"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-2-new-mexico/" class="post-card-link">Episode 2: New Mexico</a>
+            </div>
+            <div class="post-card-excerpt">
+                Brent heads onward to New Mexico while Tayler remains with her parents back in the Dallas area. In our previous episode, Tayler had gone back to seek treatment for pain issues she was having related…
+            </div>
+            <a href="/blog/episode-2-new-mexico/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-05-12">May 5/12/2022, 2022</time>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-image">
+            
+                <a href="/blog/episode-1-a-journey-begins-heading-west/">
+                    <picture><source type="image/avif" srcset="/img/w8WHHwo06c-500.avif 500w"><source type="image/webp" srcset="/img/w8WHHwo06c-500.webp 500w"><img loading="lazy" decoding="async" src="/img/w8WHHwo06c-500.jpeg" alt="Episode 1: A Journey Begins, Heading West" width="500" height="666"></picture>
+                </a>
+            
+        </div>
+        <div class="post-card-content">
+            <div class="post-card-tags">
+                    <a href="/tags/season-1/" class="post-tag">season-1</a>
+                    <a href="/tags/videos/" class="post-tag">videos</a>
+            </div>
+            <div class="post-card-title">
+                <a href="/blog/episode-1-a-journey-begins-heading-west/" class="post-card-link">Episode 1: A Journey Begins, Heading West</a>
+            </div>
+            <div class="post-card-excerpt">
+                Welcome to our vlog, capturing information related to and the travels of Brent and Tayler Spotswood. This is the first video that we put together that documents a bit of our background, how we came…
+            </div>
+            <a href="/blog/episode-1-a-journey-begins-heading-west/" class="read-more-link">READ MORE</a>
+        </div>
+        <div class="post-card-footer">
+            <time class="post-card-date" datetime="2022-05-12">May 5/12/2022, 2022</time>
+        </div>
+    </div>
+</div>
 
 
 <p>See <a href="/tags/">all tags</a>.</p>
@@ -639,7 +1112,7 @@ h2 {
 			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em></p>
 		</footer>
 
-		<!-- This page `/tags/videos/` was built on 2025-05-17T06:30:14.801Z -->
+		<!-- This page `/tags/videos/` was built on 2025-05-17T08:41:14.133Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
 		<script type="module" src="/js/image-gallery.js"></script>
 	</body>

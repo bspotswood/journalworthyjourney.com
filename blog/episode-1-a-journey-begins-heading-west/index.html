@@ -299,13 +299,6 @@ header {
 }
 
 /* Tags */
-.post-tag {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	text-transform: capitalize;
-	font-style: italic;
-}
 .postlist-item > .post-tag {
 	align-self: center;
 }
@@ -350,6 +343,133 @@ h2 {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+/* Post Grid Layout */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  height: 100%;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.post-card-image {
+  height: 200px;
+  overflow: hidden;
+	display: grid;
+	align-content: center;
+}
+
+.post-card-image img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.post-card-image:hover img {
+  transform: scale(1.05);
+}
+
+.post-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.post-card-tags {
+  margin-bottom: 0.75rem;
+}
+
+.post-tag {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.post-tag:hover {
+  background-color: #e0e0e0;
+}
+
+.post-card-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.3;
+	font-weight: 900;
+}
+
+.post-card-title a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.post-card-title a:hover {
+  color: var(--text-color-link-active);
+}
+
+.post-card-excerpt {
+  margin-bottom: 1.5rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.read-more-link {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color-link-active);
+  font-size: 0.9rem;
+  margin-top: auto;
+  letter-spacing: 1px;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+.post-card-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.post-card-date {
+  display: block;
+}
+
+/* Archive link */
+.archive-link {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
 }
 .jwj-gallery {
   margin: 2rem 0;
@@ -830,7 +950,7 @@ pre[class*="language-diff-"] {
 <p>We also had a close call with a tornado, going past just 5 miles north of where we were staying.  Too close for comfort.    Covid closures seemed to just continue to be more and more frequent.  Even our next park in Roswell cancelled on us so we continued our stay in Abilene for an extra week.</p>
 <picture><source type="image/avif" srcset="/blog/episode-1-a-journey-begins-heading-west/FM1Ps6kRrA-400.avif 400w"><source type="image/webp" srcset="/blog/episode-1-a-journey-begins-heading-west/FM1Ps6kRrA-400.webp 400w"><img loading="eager" decoding="async" src="/blog/episode-1-a-journey-begins-heading-west/FM1Ps6kRrA-400.jpeg" alt="Tornado warning" width="400" height="390"></picture>
 <p>With as much pain as I was in, we made the difficult decision to have Brent drive me to meet my parents and I would head home and spend the foreseeable future back in Dallas to see my doctors to find out what was wrong.  Then once I healed or got better, I would rejoin him on the road.  After dropping me off, Brent headed back to Abilene where he would continue to stay to work and watch the rig and at week’s end would continue on to Albuquerque New Mexico.</p>
-<p>The next day I had an emergency appointment with my primary care doctor who then sent me to an orthopedic pain doctor.  The doctor thought it was a pinched nerve in my back so he started me on some meds and I was referred to a physical therapist.  This therapy was quite painful… and months later I would find out that I in fact DID have a fractured rib bone, not a strained muscle, so therapy may have made things worse for me in the long run and we didn’t know it at the time.  With me still needing more time to heal, Brent continued on without me to New Mexico at that end of that week and I was to unexpectedly spend my birthday away from him at home.  With all the Covid shutdowns paired with my pain and lingering sickness, on top of not being able to spend the day with my husband, it was a very odd birthday.  The one exciting thing was that my sister got home safely from Spain and I was able to see her and spend some time with her before I rejoined Brent in New Mexico.</p>
+<p>The next day I had an emergency appointment with my primary care doctor who then sent me to an orthopedic pain doctor.  The doctor thought it was a pinched nerve in my back so he started me on some meds and I was referred to a physical therapist.  This therapy was quite painful… and months later I would find out that I in fact DID have a fractured rib bone, not a strained muscle, so therapy may have made things worse for me in the long run and we didn’t know it at the time.  With me still needing more time to heal, Brent continued on without me to New Mexico at that end of the week and I was to unexpectedly spend my birthday away from him at home.  With all the Covid shutdowns paired with my pain and lingering sickness, on top of not being able to spend the day with my husband, it was a very odd birthday.  The one exciting thing was that my sister got home safely from Spain and I was able to see her and spend some time with her before I rejoined Brent in New Mexico.</p>
 
 <ul class="links-nextprev"><li class="links-nextprev-next">Next →<br><a href="/blog/episode-2-new-mexico/">Episode 2: New Mexico</a></li>
 </ul>
@@ -842,7 +962,7 @@ pre[class*="language-diff-"] {
 			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em></p>
 		</footer>
 
-		<!-- This page `/blog/episode-1-a-journey-begins-heading-west/` was built on 2025-05-17T06:30:14.656Z -->
+		<!-- This page `/blog/episode-1-a-journey-begins-heading-west/` was built on 2025-05-17T08:39:15.783Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
 		<script type="module" src="/js/image-gallery.js"></script>
 	</body>

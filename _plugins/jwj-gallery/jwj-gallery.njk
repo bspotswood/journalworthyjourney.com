@@ -1,0 +1,22 @@
+<div class="jwj-gallery {{ 'jwj-gallery-continuous' if continuousFlow else '' }}" id="{{ id }}" data-continuous-flow="{{ continuousFlow }}">
+  <div class="jwj-gallery-main">
+    <button class="jwj-gallery-nav jwj-gallery-prev" aria-label="Previous image">&lt;</button>
+    <div class="jwj-gallery-viewer">
+      {% for image in images %}
+        <div class="jwj-gallery-slide {{ 'active' if (loop.index0 === 0) else '' }}" data-index="{{ loop.index0 }}">
+          <img src="{{ image.src }}" alt="{{ image.alt }}" width="{{ width }}" loading="eager">
+        </div>
+      {% endfor %}
+    </div>
+    <button class="jwj-gallery-nav jwj-gallery-next" aria-label="Next image">&gt;</button>
+  </div>
+  <div class="jwj-gallery-thumbnails">
+    <div class="jwj-gallery-thumbnails-scroll">
+      {% for image in images %}
+        <div class="jwj-gallery-thumbnail {{ 'active' if (loop.index0 === 0) else '' }}" data-index="{{ loop.index0 }}">
+          <img src="{{ image.src }}" alt="{{ image.alt }}" width="150" loading="eager" >
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

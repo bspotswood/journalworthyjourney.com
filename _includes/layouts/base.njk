@@ -26,7 +26,6 @@
 		<style>/* This is an arbitrary CSS string added to the bundle */</style>
 		{#- Add the contents of a file to the bundle #}
 		<style>{% include "css/index.css" %}</style>
-		<style>{% include "css/image-gallery.css" %}</style>
 		{#- Or you can add from node_modules #}
 		{# <style>{% include "node_modules/prismjs/themes/prism-okaidia.css" %}</style> #}
 
@@ -37,6 +36,9 @@
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		<script type="module">{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}</script>
+
+		{# Other content for the html head that was bundled from pages (needed by jwj-gallery-plugin) #}
+		{% getBundle "html", "head" %}
 
 		{#- Goat counter analytics #}
 		{% if env.ELEVENTY_RUN_MODE == "build" %}
@@ -77,6 +79,5 @@
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
-		<script type="module" src="/js/image-gallery.js"></script>
 	</body>
 </html>

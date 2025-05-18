@@ -6,7 +6,7 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import markdownIt from "markdown-it";
 
 import pluginFilters from "./_config/filters.js";
-import galleryPlugin from "./_config/gallery.js";
+import galleryPlugin from "./_plugins/jwj-gallery/jwj-gallery-pugin.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -23,8 +23,7 @@ export default async function(eleventyConfig) {
 		.addPassthroughCopy({
 			"./public/": "/"
 		})
-		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
-		.addPassthroughCopy("./js/image-gallery.js");
+		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 
 	eleventyConfig
 		.addPassthroughCopy({
